@@ -13,11 +13,11 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     $email = validation($_POST['email']);
     $password = validation($_POST['password']);
     if(empty($email)){
-        header ("Location: login.php?error=Email is required");
+        header ("Location: index.php?error=Email is required");
         exit();
     }
     else if(empty($password)){
-        header ("Location: login.php?error=Password is required");
+        header ("Location: index.php?error=Password is required");
         exit();
     }
     else{
@@ -34,12 +34,12 @@ if(isset($_POST['email']) && isset($_POST['password'])){
             }
         }
         else{
-            header ("Location: login.php?error=In correct Email or Password");
+            header ("Location: index.php?error=In correct Email or Password");
             exit();
         }
     }
 }
 else{
-    header ("Location: login.php");
+    header ("Location: index.php");
     exit();
 }

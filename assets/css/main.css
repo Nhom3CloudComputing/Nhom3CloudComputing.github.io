@@ -118,6 +118,8 @@
     display: block;
 }
 
+
+
 .login_tab{
     width: 200px;
     height: 150px;  
@@ -213,11 +215,18 @@
 
 .box_bag{
     position: relative;
-
 }
 
 .header_right_icon_bag:focus .modal_cart{
     display: flex !important;
+}
+
+/* .close_inf_cart:focus .modal_cart{
+    display: none !important;
+} */
+
+.close_inf_cart{
+    display: block !important;
 }
 
 .inf_bag{
@@ -441,7 +450,8 @@
 
 .contain_fav2{
     position: relative;
-    margin-top: 165px;
+    width: 1100px;
+    margin: 200px auto 0;
 }
 
 .contain_fav2_background{
@@ -452,16 +462,98 @@
 
 .contain_fav2_boder{
     position: absolute;
-    width: 100px;
+    width: 1000px;
     display: flex;
+    top: -70px;
+    left: 30px;
 }
 
 .contain_fav2_left{
-    width: 455px !important;
+    width: 500px;
     height: 600px;
 }
 
 .contain_fav2_left img{
+    width: 460px;
+    margin: 0 auto;
+}
+
+.contain_fav2_right{
+    width: 500px;
+}
+
+.contain_fav2_right >*{
+    width: 380px;
+    display: block;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contain_fav2_right h1{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.contain_fav2_right a{
+    display: block;
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    color: black;
+    margin-top: 40px;
+}
+
+.contain_fav2_right span{
+    line-height: 30px;
+}
+
+.contain_fav2_right a:hover{
+    background-color: #756d3f;
+    color: white;
+}
+
+.contain_most_popular{
+    width: 100%;
+    height: 860px;
+    background-color: #d7d7cb;
+}
+
+.most_popular_title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    display: block;
+    width: fit-content;
+    padding-top: 100px;
+    margin: 100px auto;
+}
+
+.most_popular_list{
+    width: 1390px;
+    height: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.most_popular_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.item_most_popular{
+    width: 320px !important;
+    height: 100%;
+}
+
+.item_most_popular img{
     width: 100%;
 }
 

@@ -15,6 +15,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
     <link rel="stylesheet" href="/font/fontawesome-free-6.5.1-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
@@ -94,7 +95,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                     <img src="assets/img/img_fav.webp" alt="">
                 </div>
             </div>
-            <div class="contain_fav contain_fav2">
+            <div class="contain_fav2">
                 <div class="contain_fav2_background"></div>
                 <div class="contain_fav2_boder">
                     <div class="contain_fav2_left">
@@ -104,6 +105,54 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                         <h1>PROBIOTIC CLEANSING BARS</h1>
                         <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
                         <a href="">Shop Soap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contain_most_popular">
+                <p class="most_popular_title">MOST POPULAR</p>
+                <div class="most_popular_list">
+                    <div class="most_popular_content">
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                    
                     </div>
                 </div>
             </div>

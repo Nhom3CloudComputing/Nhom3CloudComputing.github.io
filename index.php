@@ -54,7 +54,8 @@
                     <div class="header_right_box_user">
                         <i class="fa-regular fa-user header_right_icon_user"></i>
                     </div>  
-                    <a href="">login</a>
+                    <!-- <a href="">login</a> -->
+                    <p>Login</p>
                     <!-- <div class="login_tab">
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
@@ -202,6 +203,18 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const closeForm = document.querySelector('.login');
+        const modal = document.querySelector('.modal');
+
+        closeForm.addEventListener('click', function() {
+            modal.style.display = 'flex';
+        });
+    });
+
+    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

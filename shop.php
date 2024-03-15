@@ -79,7 +79,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                         <div class="modal__body">
                             <div class="inf_bag">
                                 <div class="inf_bag_title">
-                                    <i class="fa-solid fa-angle-right"></i>
+                                    <i class="fa-solid fa-angle-right close_inf_cart"></i>
                                     <h1>Cart</h1>
                                 </div>
                                 <div class="overflow_cart">
@@ -344,7 +344,17 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 modal.style.display = 'none';
             });
         });
-        
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.close_inf_cart');
+            const modal = document.querySelector('.modal_cart');
+
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'flex';
+            });
+        });
     </script>
 
     <script>

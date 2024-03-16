@@ -557,10 +557,260 @@
     width: 100%;
 }
 
+.add_item_most_popular{
+    background-color: #d7d7cb !important;
+    transition: background-color 1s;
+    border: 0.5px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.add_item_most_popular:hover{
+    background-color: #5e5e4a !important;
+}
+
+.contain_naturally_simple{
+    margin-top: 90px;
+}
+
+.contain_naturally_simple h1{
+    margin: 60px auto;
+    width: 540px;
+    text-align: center;
+}
+
+.contain_naturally_simple span{
+    width: 540px;
+    height: auto;    ;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
+.contain_naturally_simple a{
+    width: 140px;
+    height: 40px;
+    border: 0.5px solid black;
+    color: black;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 1s;
+}
+
+.contain_naturally_simple a:hover{
+    background-color: #5e5e4a;
+    color: white;
+}
+
+.box_img_naturally{
+    width: 870px;
+    height: 530px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.naturally_background{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.naturally_img{
+    width: 510px;
+    height: 620px;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.contain_frais_blog{
+    width: 100%;
+    height: 975px;
+    background-color: #f3f3ef;
+    margin-top: 455px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contain_frais_blog h1{
+    padding-top: 110px;
+    margin: 110px auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.box_log{
+    width: 1110px;
+    height: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.blog_item{
+    width: 270px;
+    height: 100%;
+}
+
+.blog_item a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.blog_item a img{
+    width: 100%;
+}
+
+.blog_item h2{
+    font-size: 25px;
+    font-weight: 100 !important;
+}
+
+.blog_item a span{
+    line-height: 25px;
+}
+
+.learn_more_blog{
+    width: 140px;
+    height: 40px;
+    color: white;
+    display: block;
+    background-color: #5a5a4a;
+    margin: 65px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+
+.learn_more_blog:hover{
+    background-color: #d7d7cb;
+    color: black;
+}
+
+
+
 .error_title{
     background-color: #f2dede;
     color: #a94442;
     padding: 10px;
     width: 200px;
     border-radius: 5px;
+}
+
+.footer{
+    height: 540px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 80;
+}
+
+.footer_child ul{
+    padding: 0 0 0 5px;
+    list-style: none;
+}
+
+.footer_child ul li{
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 50 !important;
+}
+
+.footer_child{
+    width: 230px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_logo{
+    justify-content: start;
+    align-items: center;
+}
+
+.footer_logo a{
+    width: 140px;
+    height: 45px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 50 !important;
+}
+
+.footer_child_title{
+    font-size: 30px;
+}
+
+.footer_child_title_bottom{
+    position: relative;
+}
+
+.contact_social{
+    position: absolute;
+    top: 150px;
+}
+
+.contact_social i{
+    font-size: 30px;
+}
+
+.contact_social i:first-child{
+    margin-right: 20px;
+}
+
+.contact_social i:last-child{
+    margin-left: 20px;
+}
+
+body{
+    position: relative;
+}
+
+.social{
+    position: fixed;
+    top: 490px;
+    left: 47px;
+    
+}
+
+.social a{
+    text-decoration: none;
+    color: black;
+}
+
+.social i{
+    font-size: 25px;
+    display: block;
+}
+
+.social i:first-child{
+    margin-bottom: 25px;
+}
+
+.social i:last-child{
+    margin-top: 25px;
 }

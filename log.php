@@ -16,7 +16,6 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/shop.css">
-    <link rel="stylesheet" href="/font/fontawesome-free-6.5.1-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -117,7 +116,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                             <span id="title2" class="title">Lavender</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
-                            <button class="add_item_to_card">Add to Card</button>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
                             <div class="item_sale">
                                 <span>SALE</span>
                             </div>
@@ -127,7 +126,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                             <span id="title2" class="title">Lavender</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
-                            <button class="add_item_to_card">Add to Card</button>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
                             <div class="item_sale">
                                 <span>SALE</span>
                             </div>
@@ -137,7 +136,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                             <span id="title2" class="title">Lavender</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
-                            <button class="add_item_to_card">Add to Card</button>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
                             <div class="item_sale">
                                 <span>SALE</span>
                             </div>
@@ -147,7 +146,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                             <span id="title2" class="title">Lavender</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
-                            <button class="add_item_to_card">Add to Card</button>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
                             <div class="item_sale">
                                 <span>SALE</span>
                             </div>
@@ -156,6 +155,99 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                     </div>
                 </div>
             </div>
+            <div class="contain_naturally_simple">
+                <h1>NATURALLY SIMPLE</h1>
+                <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                <a href="">Our Story</a>
+                <div class="box_img_naturally">
+                    <img src="assets/img/background_naturally.webp" class="naturally_background" alt="">
+                    <img src="assets/img/naturally.webp" class="naturally_img" alt="">
+                </div>
+            </div>
+            <div class="contain_frais_blog">
+                <h1>THE FRAIS BLOG</h1>
+                <div class="box_log">
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/using_candles.webp" alt="">
+                            <h2>Re-Using Candles</h2>
+                            <span>
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...
+                            </span>
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/pick_the_Right.webp" alt="">
+                            <h2>How to Pick the Right Scent</h2>
+                            <span>
+                            Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your
+                            </span>
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/5_way_to_take.webp" alt="">
+                            <h2>5 Ways to Take Care of Your Candles</h2>
+                            <span>
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <a href="" class="learn_more_blog">Learn More</a>
+            </div>
+            <div class="footer">
+                <div class="footer_child footer_logo">
+                    <a href="">FRAIS</a>
+                </div>
+                <div class="footer_child footer_mid">
+                    <div>
+                        <a href="" class="footer_child_title">SHOP</a>
+                        <ul>
+                            <li><a href="">CANDLES</a></li>
+                            <li><a href=""></a>SOAPAS</li>
+                            <li><a href=""></a>SALE</li>
+                            <li><a href=""></a>GIFT CARD</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="" class="footer_child_title">HELP</a>
+                        <ul>
+                            <li><a href="">TERMS & CONDITIONS</a></li>
+                            <li><a href=""></a>PRIVACY POLICY</li>
+                            <li><a href=""></a>SHIPPING & RETURNS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_child footer_right">
+                    <div>
+                        <a href="" class="footer_child_title">FRAIS</a>
+                        <ul>
+                            <li><a href="">OUR STORY</a></li>
+                            <li><a href="">CONTACT US</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_child_title_bottom">
+                        <a href="" class="footer_child_title">CONTACT US</a>
+                        <ul>
+                            <li><a href="">012 345 6789</a></li>
+                            <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
+                        </ul>
+                        <div class="contact_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
     </div>
 </body>

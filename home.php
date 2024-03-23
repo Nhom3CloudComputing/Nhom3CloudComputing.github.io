@@ -36,7 +36,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                         <a href="">BLOG</a>
                     </li>
                     <li>
-                        <a href="">SALE</a>
+                        <a href="sale.php">SALE</a>
                     </li>
                     <li>
                         <a href="">CONTACT</a>
@@ -50,7 +50,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 <div class="header_right_search">
                     <div>
                         <i class="fa-solid fa-magnifying-glass header_right_icon_search"></i>
-                        <input type="text" class="header_right_inpput_search" placeholder="Search">
+                        <input type="text" id="searchInput" class="header_right_inpput_search" placeholder="Search">
                         <div class="header_right_icon_micro">
                             <i class="fa-solid fa-microphone"></i>
                         </div>
@@ -65,22 +65,143 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                     <div class="login_tab">
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
+                            <div class="space space_tab"></div>
                             <li><a href="">Hỗ trợ</a></li>
-                            <li><a href="">Đăng xuất</a></li>
+                            <div class="space space_tab"></div>
+                            <li><a href="index.php">Đăng xuất</a></li>
                         </ul>
                     </div>
                 </div>
                 <i class="fa-solid fa-gift header_right_icon_gift"></i>
-                <i class="fa-solid fa-bag-shopping header_right_icon_bag"></i>
+                <div class="box_bag">
+                    <i class="fa-solid fa-bag-shopping header_right_icon_bag"></i>
+                    <div class="modal modal_cart">
+                        <div class="modal__overlay modal__overlay_cart"></div>
+                        <div class="modal__body">
+                            <div class="inf_bag">
+                                <div class="inf_bag_title">
+                                    <i class="fa-solid fa-angle-right close_inf_cart"></i>
+                                    <h1>Cart</h1>
+                                </div>
+                                <div class="overflow_cart">
+                                    <div class="overflow_cart_content">
+                                        <div class="cart_item">
+                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <div class="cart_item_inf">
+                                                <p>Coco Sandelwoo</p>
+                                                <p class="cart_item_price">$85.00</p>
+                                                <div class="cart_item_inf_quantity">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                    <p class="cart_item_inf_quantity_p">0</p>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space_item"></div>
+                                        <div class="cart_item">
+                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <div class="cart_item_inf">
+                                                <p>Coco Sandelwoo</p>
+                                                <p class="cart_item_price">$85.00</p>
+                                                <div class="cart_item_inf_quantity">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                    <p class="cart_item_inf_quantity_p">0</p>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space_item"></div>
+                                        <div class="cart_item">
+                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <div class="cart_item_inf">
+                                                <p>Coco Sandelwoo</p>
+                                                <p class="cart_item_price">$85.00</p>
+                                                <div class="cart_item_inf_quantity">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                    <p class="cart_item_inf_quantity_p">0</p>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space_item"></div>
+                                        <div class="cart_item">
+                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <div class="cart_item_inf">
+                                                <p>Coco Sandelwoo</p>
+                                                <p class="cart_item_price">$85.00</p>
+                                                <div class="cart_item_inf_quantity">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                    <p class="cart_item_inf_quantity_p">0</p>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space_item"></div>
+                                        <div class="cart_item">
+                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <div class="cart_item_inf">
+                                                <p>Coco Sandelwoo</p>
+                                                <p class="cart_item_price">$85.00</p>
+                                                <div class="cart_item_inf_quantity">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                    <p class="cart_item_inf_quantity_p">0</p>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space_item"></div>
+                                        <div class="cart_item">
+                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <div class="cart_item_inf">
+                                                <p>Coco Sandelwoo</p>
+                                                <p class="cart_item_price">$85.00</p>
+                                                <div class="cart_item_inf_quantity">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                    <p class="cart_item_inf_quantity_p">0</p>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space_item"></div>
+                                        <div class="cart_item">
+                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <div class="cart_item_inf">
+                                                <p>Coco Sandelwoo</p>
+                                                <p class="cart_item_price">$85.00</p>
+                                                <div class="cart_item_inf_quantity">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                    <p class="cart_item_inf_quantity_p">0</p>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total_price">
+                                        <p class="total_price_title">Subtotal</p>
+                                        <p class="total_price_price">0</p>
+                                        <div class="total_price_space"></div>
+                                        <div class="view_cart">
+                                            <a href="">View Cart</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
+
+
+
+        
         <div class="contain">
             <div class="contain_background">
                 <img src="assets/img/background.webp" alt="">
                 <div>
                     <span>HANDCRAFTED ORGANIC SOAPS & CANDLES</span><br>
                     <h1>JUST LIKE NATURE INTENDED</h1>
-                    <button>Shop Now</button>
+                    <a href="shop.php">Shop Now</a>
                 </div>
             </div>
             <h1 class="contain_title_fav">SHOP OUR FAVORITES</h1>
@@ -88,7 +209,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 <div class="contain_fav_left">
                     <h1>NATURE’S ESSENCE SCENTED CANDLES</h1>
                     <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
-                    <a href="shop.php">Shop Candles</a>
+                    <a href="candles.php">Shop Candles</a>
                 </div>
                 <div class="contain_fav_right">
                     <img src="assets/img/img_fav.webp" alt="">
@@ -250,6 +371,26 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
             <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.header_right_icon_bag');
+            const modal = document.querySelector('.modal_cart');
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'flex';
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.modal__overlay_cart');
+            const modal = document.querySelector('.modal_cart');
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
 

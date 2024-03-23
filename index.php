@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -20,7 +20,7 @@
             <div class="header_menu">
                 <ul>
                     <li>
-                        <a href="">SHOP</a>
+                        <a href="shop.php">SHOP</a>
                     </li>
                     <li>
                         <a href="">OUR STORY</a>
@@ -43,7 +43,7 @@
                 <div class="header_right_search">
                     <div>
                         <i class="fa-solid fa-magnifying-glass header_right_icon_search"></i>
-                        <input type="text" id="searchInput" class="header_right_inpput_search" placeholder="Search">
+                        <input type="text" class="header_right_inpput_search" placeholder="Search">
                         <div class="header_right_icon_micro">
                             <i class="fa-solid fa-microphone"></i>
                         </div>
@@ -54,14 +54,11 @@
                     <div class="header_right_box_user">
                         <i class="fa-regular fa-user header_right_icon_user"></i>
                     </div>  
-                    <!-- <a href="">login</a> -->
-                    <p>Login</p>
+                    <a href="">Login</a>
                     <!-- <div class="login_tab">
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
-                            <div class="space space_tab"></div>
                             <li><a href="">Hỗ trợ</a></li>
-                            <div class="space space_tab"></div>
                             <li><a href="">Đăng xuất</a></li>
                         </ul>
                     </div> -->
@@ -70,96 +67,180 @@
                 <i class="fa-solid fa-bag-shopping header_right_icon_bag"></i>
             </div>
         </header>
-        <div class="container">
-            <div class="place">
-                <a href="">Home</a>
-                <i class="fa-solid fa-angle-right"></i>
-                <span>All Products</span>
-            </div>
-            <div class="content">
-                <div class="left">
-                    <h1>Browse by</h1>
-                    <div class="space_shop"></div>
-                    <ul class="list_left">
-                        <li><a href="" class="list_item_left">All Products</a></li>
-                        <li><a href="" class="list_item_left">CANDLES</a></li>
-                        <li><a href="" class="list_item_left">MOST POPULAR</a></li>
-                        <li><a href="" class="list_item_left">SALE</a></li>
-                        <li><a href="" class="list_item_left">SOAPS</a></li>
-                    </ul>
+        <div class="contain">
+            <div class="contain_background">
+                <img src="assets/img/background.webp" alt="">
+                <div>
+                    <span>HANDCRAFTED ORGANIC SOAPS & CANDLES</span><br>
+                    <h1>JUST LIKE NATURE INTENDED</h1>
+                    <button>Shop Now</button>
                 </div>
-                <div class="right">
-                    <h1>All Products</h1>
-                    <span class="note">This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</span>
-                    <div class="list_item_right">
-                        <div class="right_sorf">
-                            <span>000item</span>
+            </div>
+            <h1 class="contain_title_fav">SHOP OUR FAVORITES</h1>
+            <div class="contain_fav">
+                <div class="contain_fav_left">
+                    <h1>NATURE’S ESSENCE SCENTED CANDLES</h1>
+                    <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                    <a href="shop.php">Shop Candles</a>
+                </div>
+                <div class="contain_fav_right">
+                    <img src="assets/img/img_fav.webp" alt="">
+                </div>
+            </div>
+            <div class="contain_fav2">
+                <div class="contain_fav2_background"></div>
+                <div class="contain_fav2_boder">
+                    <div class="contain_fav2_left">
+                        <img src="assets/img/contain_fav2_left.webp" alt="">
+                    </div>
+                    <div class="contain_fav2_right">
+                        <h1>PROBIOTIC CLEANSING BARS</h1>
+                        <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                        <a href="">Shop Soap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contain_most_popular">
+                <p class="most_popular_title">MOST POPULAR</p>
+                <div class="most_popular_list">
+                    <div class="most_popular_content">
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
                         </div>
-                        <div class="list_item">
-                            <div class="row_item">
-                                <div id="item1" class="item">
-                                    <img src="assets/img/pearl_powder.webp" alt="">
-                                    <span id="title1" class="title">Pearl Powder</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                </div>
-                                <div class="item" id="item2">
-                                    <img src="assets/img/img_shop/lavender.webp" alt="">
-                                    <span id="title2" class="title">Lavender</span>
-                                    <span class="price_sale">$85.00</span>
-                                    <span class="price">$80.75</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
-                                <div class="item" id="item3">
-                                    <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
-                                    <span id="title3" class="title">Coco & Sandelwoo</span>
-                                    <span class="price_sale">$15.00</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
                             </div>
-                            <div class="row_item">
-                                <div id="item4" class="item">
-                                    <img src="assets/img/img_shop/green_clay.webp" alt="">
-                                    <span id="title1" class="title">Green Clay</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                </div>
-                                <div class="item" id="item5">
-                                    <img src="assets/img/img_shop/aromatic_blend.webp" alt="">
-                                    <span id="title2" class="title">Aromatic Blend</span>
-                                    <span class="price_sale">$10.00</span>
-                                    <span class="price">$9.50</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
-                                <div class="item" id="item6">
-                                    <img src="assets/img/img_shop/coconut_milk.webp" alt="">
-                                    <span id="title3" class="title">Coconut Milk</span>
-                                    <span class="price_sale">$15.00</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
                             </div>
-                            <div id="no_item">
-                                <h1>No Item !!!!</h1>
-                                <img src="assets/img/img_shop/no_item.jpg" alt="">
+                        </div>
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
                             </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="contain_naturally_simple">
+                <h1>NATURALLY SIMPLE</h1>
+                <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                <a href="">Our Story</a>
+                <div class="box_img_naturally">
+                    <img src="assets/img/background_naturally.webp" class="naturally_background" alt="">
+                    <img src="assets/img/naturally.webp" class="naturally_img" alt="">
+                </div>
+            </div>
+            <div class="contain_frais_blog">
+                <h1>THE FRAIS BLOG</h1>
+                <div class="box_log">
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/using_candles.webp" alt="">
+                            <h2>Re-Using Candles</h2>
+                            <span>
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...
+                            </span>
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/pick_the_Right.webp" alt="">
+                            <h2>How to Pick the Right Scent</h2>
+                            <span>
+                            Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your
+                            </span>
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/5_way_to_take.webp" alt="">
+                            <h2>5 Ways to Take Care of Your Candles</h2>
+                            <span>
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <a href="" class="learn_more_blog">Learn More</a>
+            </div>
+            <div class="footer">
+                <div class="footer_child footer_logo">
+                    <a href="">FRAIS</a>
+                </div>
+                <div class="footer_child footer_mid">
+                    <div>
+                        <a href="" class="footer_child_title">SHOP</a>
+                        <ul>
+                            <li><a href="">CANDLES</a></li>
+                            <li><a href=""></a>SOAPAS</li>
+                            <li><a href=""></a>SALE</li>
+                            <li><a href=""></a>GIFT CARD</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="" class="footer_child_title">HELP</a>
+                        <ul>
+                            <li><a href="">TERMS & CONDITIONS</a></li>
+                            <li><a href=""></a>PRIVACY POLICY</li>
+                            <li><a href=""></a>SHIPPING & RETURNS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_child footer_right">
+                    <div>
+                        <a href="" class="footer_child_title">FRAIS</a>
+                        <ul>
+                            <li><a href="">OUR STORY</a></li>
+                            <li><a href="">CONTACT US</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_child_title_bottom">
+                        <a href="" class="footer_child_title">CONTACT US</a>
+                        <ul>
+                            <li><a href="">012 345 6789</a></li>
+                            <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
+                        </ul>
+                        <div class="contact_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
     </div>
 
@@ -204,73 +285,31 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const closeForm = document.querySelector('.login');
-        const modal = document.querySelector('.modal');
-
-        closeForm.addEventListener('click', function() {
-            modal.style.display = 'flex';
-        });
-    });
-
-    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        const closeForm = document.querySelector('.close_form');
-        const modal = document.querySelector('.modal');
+            const closeForm = document.querySelector('.login');
+            const modal = document.querySelector('.modal');
 
-        closeForm.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
-    });
-
-    </script>
-
-    <script>
-        // Lấy nội dung văn bản bên trong thẻ span sử dụng innerText
-        const spanElements = document.getElementsByClassName('title');
-    
-        // Khai báo mảng để lưu giá trị của các thẻ span
-        const spanValues = [];
-    
-        // Dùng vòng lặp để lấy giá trị của từng thẻ span và đẩy vào mảng
-        for (let i = 0; i < spanElements.length; i++) {
-            const spanValue = spanElements[i].textContent;
-            spanValues.push(spanValue);
-        }
-    
-        console.log(spanValues);
-        
-        document.getElementById('searchInput').addEventListener('input', function() {
-            const searchTerm = this.value;
-            let check = false;
-            spanValues.forEach((value, index) => {
-                const box = document.getElementById(`item${index + 1}`);
-                console.log(`item${index + 1}`);
-                const comparisonResult = value.localeCompare(searchTerm, 'en', { sensitivity: 'base' });
-                console.log(comparisonResult);
-                if (searchTerm === '') {
-                    // Nếu searchTerm rỗng, hiển thị tất cả     
-                    box.style.display = 'block';
-                } else if (comparisonResult === 0) {
-                    box.style.display = 'block';
-                    check = true;
-                } else {
-                    // Ngược lại, ẩn đi
-                    box.style.display = 'none';
-                }
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'flex';
             });
-            const box = document.getElementById("no_item");
-            if(!check){
-                box.style.display = 'block';
-            }
-            else{
-                box.style.display = 'none';
-            }
         });
     </script>
-    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.close_form');
+            const modal = document.querySelector('.modal');
+
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    </script>
+
+
 </body>
 </html>
+
+<?php 

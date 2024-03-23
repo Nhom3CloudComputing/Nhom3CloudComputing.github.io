@@ -201,16 +201,16 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                     <h1>Browse by</h1>
                     <div class="space_shop"></div>
                     <ul class="list_left">
-                        <li><a href="shop.php" class="list_item_left list_item_left_active">All Products</a></li>
+                        <li><a href="shop.php" class="list_item_left">All Products</a></li>
                         <li><a href="candles.php" class="list_item_left">CANDLES</a></li>
-                        <li><a href="most_popular.php" class="list_item_left">MOST POPULAR</a></li>
+                        <li><a href="most_popular.php" class="list_item_left list_item_left_active">MOST POPULAR</a></li>
                         <li><a href="sale.php" class="list_item_left">SALE</a></li>
                         <li><a href="soaps.php" class="list_item_left">SOAPS</a></li>
                     </ul>
                 </div>
                 <div class="right">
-                    <h1>All Products</h1>
-                    <span class="note">This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</span>
+                    <h1>MOST POPULAR</h1>
+                    <!-- <span class="note">This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</span> -->
                     <div class="list_item_right">
                         <div class="right_sorf">
                             <span>000item</span>
@@ -412,4 +412,4 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
     header("Location: index.php");
     exit();
 }
-?>
+?>/

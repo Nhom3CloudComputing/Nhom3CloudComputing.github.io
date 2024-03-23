@@ -29,7 +29,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['name'] = $row['name'];
                 $_SESSION['id'] = $row['id'];
-                header ("Location: shop.php");
+                header ("Location: home.php");
                 exit();
             }
         }

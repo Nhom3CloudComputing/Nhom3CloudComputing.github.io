@@ -232,9 +232,11 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 <p class="most_popular_title">MOST POPULAR</p>
                 <div class="most_popular_list">
                     <div class="most_popular_content">
-                        <div class="item item_most_popular" id="item2">
-                            <img src="assets/img/img_shop/lavender.webp" alt="">
-                            <span id="title2" class="title">Lavender</span>
+                        <div class="item item_most_popular" id="item1">
+                            <a href="pearl_powder.php">
+                                <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                            </a>
+                            <span id="title2" class="title">Pearl Powder</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
                             <button class="add_item_to_card add_item_most_popular">Add to Card</button>
@@ -243,7 +245,9 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                             </div>
                         </div>
                         <div class="item item_most_popular" id="item2">
-                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <a href="lavender.php">
+                                <img src="assets/img/img_shop/lavender.webp" alt="">
+                            </a>
                             <span id="title2" class="title">Lavender</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
@@ -252,9 +256,11 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                                 <span>SALE</span>
                             </div>
                         </div>
-                        <div class="item item_most_popular" id="item2">
-                            <img src="assets/img/img_shop/lavender.webp" alt="">
-                            <span id="title2" class="title">Lavender</span>
+                        <div class="item item_most_popular" id="item3">
+                            <a href="coco_sandelwoo.php">
+                                <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                            </a>
+                            <span id="title2" class="title">Coco & Sandelwoo</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
                             <button class="add_item_to_card add_item_most_popular">Add to Card</button>
@@ -262,9 +268,11 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                                 <span>SALE</span>
                             </div>
                         </div>
-                        <div class="item item_most_popular" id="item2">
-                            <img src="assets/img/img_shop/lavender.webp" alt="">
-                            <span id="title2" class="title">Lavender</span>
+                        <div class="item item_most_popular" id="item4">
+                            <a href="green_clay.php">
+                                <img src="assets/img/img_shop/green_clay.webp" alt="">
+                            </a>
+                            <span id="title2" class="title">Green Clay</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
                             <button class="add_item_to_card add_item_most_popular">Add to Card</button>

@@ -14,10 +14,13 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/product_item.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="icon" href="assets/img/no_item.jpg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/shop.css">
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="test.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -61,6 +64,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                         <i class="fa-regular fa-user header_right_icon_user"></i>
                     </div>  
                     <a href=""><?php echo $_SESSION['name']; ?></a>
+                    <!-- <?php echo $_SESSION['name']; ?> -->
                     <div class="login_tab">
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
@@ -190,166 +194,200 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 </div>
             </div>
         </header>
-        <div class="container">
-            <div class="place">
-                <a href="home.php">Home</a>
-                <i class="fa-solid fa-angle-right"></i>
-                <span>SOAPS</span>
+    </div>
+    <div class="container">
+        <div class="product_page">
+            <div class="menu">
+                <div>   
+                    <p>Green Clay</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <a href="">Prev</a>
+                    <span>|</span>
+                    <a href="">Next</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </div>
-            <div class="content">
-                <div class="left">
-                    <h1>Browse by</h1>
-                    <div class="space_shop"></div>
-                    <ul class="list_left">
-                        <li><a href="shop.php" class="list_item_left">All Products</a></li>
-                        <li><a href="candles.php" class="list_item_left">CANDLES</a></li>
-                        <li><a href="most_popular.php" class="list_item_left">MOST POPULAR</a></li>
-                        <li><a href="sale.php" class="list_item_left">SALE</a></li>
-                        <li><a href="soaps.php" class="list_item_left list_item_left_active">SOAPS</a></li>
+            <div class="product_item">
+                <div class="product_item_left">
+                    <img src="assets\img\green_clay.webp" alt="">
+                    <span class="product_item_left_span">
+                    I'm a product description. This is a great place 
+                    to "sell" your product and grab buyers' attention. 
+                    Describe your product clearly and concisely. Use 
+                    unique keywords. Write your own description instead 
+                    of using manufacturers' copy.
+                    </span>
+                </div>
+                <div class="product_item_right">
+                    <h2 class="product_name">Green Clay</h2>
+                    <span class="product_msp">SKU: 001</span>
+                    <p class="product_price">%85.000</p>
+                    <span class="product_title_quantity">Quantity</span>
+                    <div class="product_quantity">
+                        <input type="text" id="pearl_powder_quantity" id="input_quantity_product" spanValues="1">
+                        <div class="product_quantity_up_down">
+                            <i class="fa-solid fa-chevron-up"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <button class="add_to_cart_product">Add to Cart</button><br>
+                    <button class="buy_product">Buy Now</button>
+                    <div class="product_inf">
+                        <h2 class="product_title_click product_inf_title">PRODUCT INFO <i class="fa-solid fa-plus"></i> </h2>
+                        <span class="product_span_click product_info_span">
+                            I'm a product detail. I'm a great place to add more 
+                            information about your product such as sizing, material,
+                            care and cleaning instructions. This is also a great 
+                            space to write what makes this product special and how your 
+                            customers can benefit from this item. Buyers like to know what
+                            they’re getting before they purchase, so give them as much
+                            information as possible so they can buy with confidence and 
+                            certainty.
+                        </span>
+                    </div>
+                    <div class="space_product"></div>
+                    <div class="return_refund">
+                        <h2 class="product_title_click return_refund_title">RETURN & REFUND POLICY <i class="fa-solid fa-plus"></i> </h2>
+                        <span class="product_span_click return_refund_span">
+                        I’m a Return and Refund policy. I’m a great 
+                        place to let your customers know what to do 
+                        in case they are dissatisfied with their 
+                        purchase. Having a straightforward refund or 
+                        exchange policy is a great way to build trust 
+                        and reassure your customers that they can buy 
+                        with confidence.
+                        </span>
+                    </div>
+                    <div class="space_product"></div>
+                    <div class="shipping">
+                        <h2 class="product_title_click shipping_title">SHIPPING INFO <i class="fa-solid fa-plus"></i> </h2>
+                        <span class="product_span_click shipping_span">
+                        I'm a shipping policy. I'm a great place to 
+                        add more information about your shipping 
+                        methods, packaging and cost. Providing 
+                        straightforward information about your 
+                        shipping policy is a great way to build trust 
+                        and reassure your customers that they can buy 
+                        from you with confidence.
+                        </span>
+                    </div>
+                    <div class="product_contact">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="also_like">
+            <h1 class="also_like_title">You Might Also Like</h1>
+            <div class="most_popular_list">
+                <div class="most_popular_content">
+                    <div class="item item_most_popular" id="item1">
+                        <a href="pearl_powder.php">
+                            <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                        </a>
+                        <span id="title2" class="title">Pearl Powder</span>
+                        <span class="price_sale">$85.00</span>
+                        <span class="price">$80.75</span><br>
+                        <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                        <div class="item_sale">
+                            <span>SALE</span>
+                        </div>
+                    </div>
+                    <div class="item item_most_popular" id="item2">
+                        <a href="lavender.php">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                        </a>
+                        <span id="title2" class="title">Lavender</span>
+                        <span class="price_sale">$85.00</span>
+                        <span class="price">$80.75</span><br>
+                        <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                        <div class="item_sale">
+                            <span>SALE</span>
+                        </div>
+                    </div>
+                    <div class="item item_most_popular" id="item3">
+                        <a href="coco_sandelwoo.php">
+                            <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                        </a>
+                        <span id="title2" class="title">Coco & Sandelwoo</span>
+                        <span class="price_sale">$85.00</span>
+                        <span class="price">$80.75</span><br>
+                        <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                        <div class="item_sale">
+                            <span>SALE</span>
+                        </div>
+                    </div>
+                    <div class="item item_most_popular" id="item4">
+                        <a href="green_clay.php">
+                            <img src="assets/img/img_shop/green_clay.webp" alt="">
+                        </a>
+                        <span id="title2" class="title">Green Clay</span>
+                        <span class="price_sale">$85.00</span>
+                        <span class="price">$80.75</span><br>
+                        <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                        <div class="item_sale">
+                            <span>SALE</span>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_child footer_logo">
+                <a href="">FRAIS</a>
+            </div>
+            <div class="footer_child footer_mid">
+                <div>
+                    <a href="" class="footer_child_title">SHOP</a>
+                    <ul>
+                        <li><a href="">CANDLES</a></li>
+                        <li><a href=""></a>SOAPAS</li>
+                        <li><a href=""></a>SALE</li>
+                        <li><a href=""></a>GIFT CARD</li>
                     </ul>
                 </div>
-                <div class="right">
-                    <h1>SOAPS</h1>
-                    <!-- <span class="note">This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</span> -->
-                    <div class="list_item_right">
-                        <div class="right_sorf">
-                            <span>000item</span>
-                        </div>
-                        <div class="list_item">
-                            <div class="row_item">
-                                <div id="item1" class="item">
-                                    <a href="pearl_powder.php">
-                                        <img src="assets/img/img_shop/pearl_powder.webp" alt="">
-                                    </a>
-                                    <span id="title1" class="title">Pearl Powder</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                </div>
-                                <div class="item" id="item2">
-                                    <a href="lavender.php">
-                                        <img src="assets/img/img_shop/lavender.webp" alt="">
-                                    </a>
-                                    <span id="title2" class="title">Lavender</span>
-                                    <span class="price_sale">$85.00</span>
-                                    <span class="price">$80.75</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
-                                <div class="item" id="item3">
-                                    <a href="coco_sandelwoo.php">
-                                        <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
-                                    </a>
-                                    <span id="title3" class="title">Coco & Sandelwoo</span>
-                                    <span class="price_sale">$15.00</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row_item">
-                                <div id="item4" class="item">
-                                    <a href="green_clay.php">
-                                        <img src="assets/img/img_shop/green_clay.webp" alt="">
-                                    </a>
-                                    <span id="title1" class="title">Green Clay</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                </div>
-                            </div>
-                            <div id="no_item">
-                                <h1>No Item !!!!</h1>
-                                <img src="assets/img/img_shop/no_item.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <a href="" class="footer_child_title">HELP</a>
+                    <ul>
+                        <li><a href="">TERMS & CONDITIONS</a></li>
+                        <li><a href=""></a>PRIVACY POLICY</li>
+                        <li><a href=""></a>SHIPPING & RETURNS</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer">
-                <div class="footer_child footer_logo">
-                    <a href="">FRAIS</a>
+            <div class="footer_child footer_right">
+                <div>
+                    <a href="" class="footer_child_title">FRAIS</a>
+                    <ul>
+                        <li><a href="">OUR STORY</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
                 </div>
-                <div class="footer_child footer_mid">
-                    <div>
-                        <a href="" class="footer_child_title">SHOP</a>
-                        <ul>
-                            <li><a href="">CANDLES</a></li>
-                            <li><a href=""></a>SOAPAS</li>
-                            <li><a href=""></a>SALE</li>
-                            <li><a href=""></a>GIFT CARD</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="" class="footer_child_title">HELP</a>
-                        <ul>
-                            <li><a href="">TERMS & CONDITIONS</a></li>
-                            <li><a href=""></a>PRIVACY POLICY</li>
-                            <li><a href=""></a>SHIPPING & RETURNS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer_child footer_right">
-                    <div>
-                        <a href="" class="footer_child_title">FRAIS</a>
-                        <ul>
-                            <li><a href="">OUR STORY</a></li>
-                            <li><a href="">CONTACT US</a></li>
-                            <li><a href="">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_child_title_bottom">
-                        <a href="" class="footer_child_title">CONTACT US</a>
-                        <ul>
-                            <li><a href="">012 345 6789</a></li>
-                            <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
-                        </ul>
-                        <div class="contact_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </div>
+                <div class="footer_child_title_bottom">
+                    <a href="" class="footer_child_title">CONTACT US</a>
+                    <ul>
+                        <li><a href="">012 345 6789</a></li>
+                        <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
+                    </ul>
+                    <div class="contact_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- <div class="modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__body">
-            <div class="auth_form">
-                <div class="auth_form_left">
-                    <h1>Welcome!</h1>
-                    <span>Login</span>
-                    <form action="" class="login_form">
-                        <label for="email" class="label_input" >Email</label>
-                        <input type="email" name="email" id="email"><br>
-                        <label for="password" class="label_input">Password</label>
-                        <input type="password" name="password" id="password">
-                        <div class="forgot_and_submit">
-                            <a href="">Forgot your password?</a>
-                            <button type="submit">Login</button>
-                        </div>
-                        <div class="sign_up">
-                            <span>Don't have an account?</span>
-                            <a href="">Sign up now</a>
-                        </div>
-                    </form>
-                </div>
-                <div class="auth_form_right">
-                    <img src="/web3/assets/img/login_img.avif" alt="">
-                    <div class="close_form">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <script>
+    <!-- hien thong tin cart -->
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.header_right_icon_bag');
             const modal = document.querySelector('.modal_cart');
@@ -357,9 +395,9 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 modal.style.display = 'flex';
             });
         });
-    </script>
-
-    <script>
+    </script> -->
+    <!-- dong cart -->
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.modal__overlay_cart');
             const modal = document.querySelector('.modal_cart');
@@ -367,9 +405,9 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 modal.style.display = 'none';
             });
         });
-    </script>
-
-    <script>
+    </script> -->
+    <!-- dong form login -->
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.close_form');
             const modal = document.querySelector('.modal');
@@ -378,20 +416,21 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 modal.style.display = 'none';
             });
         });
-    </script>
+    </script> -->
 
-    <script>
+    <!-- dong thong tin cart qua icon > -->
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.close_inf_cart');
             const modal = document.querySelector('.modal_cart');
 
             closeForm.addEventListener('click', function() {
-                modal.style.display = 'flex';
+                modal.style.display = 'none';
             });
         });
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
         // Lấy nội dung văn bản bên trong thẻ span sử dụng innerText
         const spanElements = document.getElementsByClassName('title');
     
@@ -434,9 +473,9 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 box.style.display = 'none';
             }
         });
-    </script>
+    </script> -->
 
-    <script type="text/javascript" src="test.js"></script>
+
     
 </body>
 </html>
@@ -446,4 +485,4 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
     header("Location: index.php");
     exit();
 }
-?>/
+?>

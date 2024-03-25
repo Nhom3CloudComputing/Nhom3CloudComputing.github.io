@@ -26,7 +26,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
             <div class="header_menu">
                 <ul>
                     <li>
-                        <a href="">SHOP</a>
+                        <a href="shop.php">SHOP</a>
                     </li>
                     <li>
                         <a href="">OUR STORY</a>
@@ -194,7 +194,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
             <div class="place">
                 <a href="home.php">Home</a>
                 <i class="fa-solid fa-angle-right"></i>
-                <span>All Products</span>
+                <span>CANDLES</span>
             </div>
             <div class="content">
                 <div class="left">
@@ -202,7 +202,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                     <div class="space_shop"></div>
                     <ul class="list_left">
                         <li><a href="shop.php" class="list_item_left">All Products</a></li>
-                        <li><a href="candles.php" class="list_item_left list_item_left_active ">CANDLES</a></li>
+                        <li><a href="candles.php" class="list_item_left list_item_left_active">CANDLES</a></li>
                         <li><a href="most_popular.php" class="list_item_left">MOST POPULAR</a></li>
                         <li><a href="sale.php" class="list_item_left">SALE</a></li>
                         <li><a href="soaps.php" class="list_item_left">SOAPS</a></li>
@@ -218,13 +218,17 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                         <div class="list_item">
                             <div class="row_item">
                                 <div id="item1" class="item">
-                                    <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                                    <a href="pearl_powder.php">
+                                        <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                                    </a>
                                     <span id="title1" class="title">Pearl Powder</span>
                                     <span class="price">$85.00</span><br>
                                     <button class="add_item_to_card">Add to Card</button>
                                 </div>
                                 <div class="item" id="item2">
-                                    <img src="assets/img/img_shop/lavender.webp" alt="">
+                                    <a href="lavender.php">
+                                        <img src="assets/img/img_shop/lavender.webp" alt="">
+                                    </a>
                                     <span id="title2" class="title">Lavender</span>
                                     <span class="price_sale">$85.00</span>
                                     <span class="price">$80.75</span><br>
@@ -234,7 +238,9 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                                     </div>
                                 </div>
                                 <div class="item" id="item3">
-                                    <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                                    <a href="coco_sandelwoo.php">
+                                        <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                                    </a>
                                     <span id="title3" class="title">Coco & Sandelwoo</span>
                                     <span class="price_sale">$15.00</span>
                                     <span class="price">$85.00</span><br>
@@ -246,36 +252,64 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                             </div>
                             <div class="row_item">
                                 <div id="item4" class="item">
-                                    <img src="assets/img/img_shop/green_clay.webp" alt="">
+                                    <a href="green_clay.php">
+                                        <img src="assets/img/img_shop/green_clay.webp" alt="">
+                                    </a>
                                     <span id="title1" class="title">Green Clay</span>
                                     <span class="price">$85.00</span><br>
                                     <button class="add_item_to_card">Add to Card</button>
-                                </div>
-                                <div class="item" id="item5">
-                                    <img src="assets/img/img_shop/aromatic_blend.webp" alt="">
-                                    <span id="title2" class="title">Aromatic Blend</span>
-                                    <span class="price_sale">$10.00</span>
-                                    <span class="price">$9.50</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
-                                <div class="item" id="item6">
-                                    <img src="assets/img/img_shop/coconut_milk.webp" alt="">
-                                    <span id="title3" class="title">Coconut Milk</span>
-                                    <span class="price_sale">$15.00</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
                                 </div>
                             </div>
                             <div id="no_item">
                                 <h1>No Item !!!!</h1>
                                 <img src="assets/img/img_shop/no_item.jpg" alt="">
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer_child footer_logo">
+                    <a href="">FRAIS</a>
+                </div>
+                <div class="footer_child footer_mid">
+                    <div>
+                        <a href="" class="footer_child_title">SHOP</a>
+                        <ul>
+                            <li><a href="">CANDLES</a></li>
+                            <li><a href=""></a>SOAPAS</li>
+                            <li><a href=""></a>SALE</li>
+                            <li><a href=""></a>GIFT CARD</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="" class="footer_child_title">HELP</a>
+                        <ul>
+                            <li><a href="">TERMS & CONDITIONS</a></li>
+                            <li><a href=""></a>PRIVACY POLICY</li>
+                            <li><a href=""></a>SHIPPING & RETURNS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_child footer_right">
+                    <div>
+                        <a href="" class="footer_child_title">FRAIS</a>
+                        <ul>
+                            <li><a href="">OUR STORY</a></li>
+                            <li><a href="">CONTACT US</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_child_title_bottom">
+                        <a href="" class="footer_child_title">CONTACT US</a>
+                        <ul>
+                            <li><a href="">012 345 6789</a></li>
+                            <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
+                        </ul>
+                        <div class="contact_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
                         </div>
                     </div>
                 </div>

@@ -73,6 +73,8 @@ else{
                             <li><a href="">Thông tin tài khoản</a></li>
                             <div class="space space_tab"></div>
                             <li><a href="index.php">Đăng xuất</a></li>
+                            <div class="space space_tab"></div>
+                            <li><a href="">Hỗ trợ</a></li>
                         </ul>
                     </div>
                 </div>

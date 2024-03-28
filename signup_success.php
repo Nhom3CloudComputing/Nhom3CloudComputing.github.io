@@ -13,13 +13,12 @@ session_start();
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/shop.css">
     <link rel="stylesheet" type="text/css" href="assets/css/test.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/test.css">
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/img/no_item.jpg" type="image/x-icon">
-    <script type="text/javascript" src="assets/js/login.js"></script>
+    <script type="text/javascript" src="assets/js/signup.js"></script>
 </head>
 <body>
     <div class="site">
@@ -195,7 +194,7 @@ session_start();
                 <div>
                     <span>HANDCRAFTED ORGANIC SOAPS & CANDLES</span><br>
                     <h1>JUST LIKE NATURE INTENDED</h1>
-                    <a href="">Shop Now</a>
+                    <button>Shop Now</button>
                 </div>
             </div>
             <h1 class="contain_title_fav">SHOP OUR FAVORITES</h1>
@@ -381,49 +380,37 @@ session_start();
             <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
     </div>
-
-    <div class="modal modal_login">
+    <div class="modal modal_signup_success">
         <div class="modal__overlay"></div>
         <div class="modal__body">
             <div class="auth_form">
                 <div class="auth_form_left">
                     <h1>Welcome!</h1>
-                    <span>Login</span>
-                    <form action="auth_login.php" class="login_form" method = "post">
-                        <label for="email" class="label_input" >Email</label>
-
-
-                        <?php
-                        if(isset($_SESSION['error'])) {
-                            echo "<p class='error_title' id='error_title_login'>{$_SESSION['error']}</p>";
-                            unset($_SESSION['error']); // clear the error message after displaying
-                        }
-                        ?>
-                        
-                        <input type="email" name="email" id="email"><br>
-                        <label for="password" class="label_input">Password</label>
-                        <input type="password" name="password" id="password">
-                        <div class="forgot_and_submit">
-                            <a href="">Forgot your password?</a>
-                            <button id="btn_login" type="submit">Login</button>
+                    <span>Sign up</span>
+                    <div class="signup_success_content">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <!-- <?php
+                            if(isset($_SESSION['success'])) {
+                                echo "<span class='success_title' id='success_title_signup'>{$_SESSION['success']}</span>";
+                                unset($_SESSION['success']); // clear the success message after displaying
+                            }
+                        ?> -->
+                        <span class='success_title' id='success_title_signup'>Your account has been created successfully!</span>
+                        <div class="signup_success_content_session">
+                            <a href="index.php" id="btn_exit_signup_success">Exit</a>
+                            <a href="index.php" id="success_to_login">Login</a>
                         </div>
-                        <div class="sign_up">
-                            <span>Don't have an account?</span>
-                            <!-- <p class="login_to_signup">Sign up now</p> -->
-                            <a class="login_to_signup" href="signup.php">Sign up now</a>
-                        </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="auth_form_right">
                     <img src="assets/img/login_img.avif" alt="">
-                    <div class="close_form">
+                    <div class="close_form close_form_signup_success">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- hien thong tin cart -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -439,28 +426,6 @@ session_start();
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.modal__overlay_cart');
             const modal = document.querySelector('.modal_cart');
-            closeForm.addEventListener('click', function() {
-                modal.style.display = 'none';
-            });
-        });
-    </script>
-    <!-- hien form login -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const closeForm = document.querySelector('.login');
-            const modal = document.querySelector('.modal_login');
-
-            closeForm.addEventListener('click', function() {
-                modal.style.display = 'flex';
-            });
-        });
-    </script>
-    <!-- dong form login -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const closeForm = document.querySelector('.close_form');
-            const modal = document.querySelector('.modal_login');
-
             closeForm.addEventListener('click', function() {
                 modal.style.display = 'none';
             });

@@ -1,9 +1,14 @@
 <?php
-session_start();
+include("config.php");
+include("firebase_connect.php");
 
-if(isset($_SESSION['id']) && isset($_SESSION['name'])){
+if(!isset($_SESSION['user'])){
+    header("location: index.php");
+}
 
+else{
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +23,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="icon" href="assets/img/no_item.jpg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -29,16 +35,16 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                         <a href="shop.php">SHOP</a>
                     </li>
                     <li>
-                        <a href="">OUR STORY</a>
+                        <a href="outstory.php">OUR STORY</a>
                     </li>
                     <li>
-                        <a href="">BLOG</a>
+                        <a href="blog.php">BLOG</a>
                     </li>
                     <li>
                         <a href="sale.php">SALE</a>
                     </li>
                     <li>
-                        <a href="">CONTACT</a>
+                        <a href="contact.php">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +57,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                         <i class="fa-solid fa-magnifying-glass header_right_icon_search"></i>
                         <input type="text" id="searchInput" class="header_right_inpput_search" placeholder="Search">
                         <div class="header_right_icon_micro">
-                            <i class="fa-solid fa-microphone" id="click_to_convert"></i>
+                            <i class="fa-solid fa-microphone"></i>
                         </div>
                     </div>
                     <div class="space"></div>
@@ -60,7 +66,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                     <div class="header_right_box_user">
                         <i class="fa-regular fa-user header_right_icon_user"></i>
                     </div>  
-                    <a href=""><?php echo $_SESSION['name']; ?></a>
+                    <a href=""><?php echo $_SESSION['user']['name']; ?></a>
                     <div class="login_tab">
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
@@ -260,10 +266,10 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                                     <button class="add_item_to_card">Add to Card</button>
                                 </div>
                             </div>
-                            <div id="no_item">
+                            <!-- <div id="no_item">
                                 <h1>No Item !!!!</h1>
                                 <img src="assets/img/img_shop/no_item.jpg" alt="">
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -271,6 +277,22 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
             <div class="footer">
                 <div class="footer_child footer_logo">
                     <a href="">FRAIS</a>
+                    <div id="map">
+                        <script>
+                            function initMap() {
+                                var location = { lat: 21.007, lng: 105.82576};
+                                var map = new google.maps.Map(document.getElementById("map"), {
+                                    zoom: 15,
+                                    center: location
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: location,
+                                    map: map
+                                });
+                            }
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFqyiPh8kFZbDUHCPzmkADnyBCVPE1dRE&callback=initMap"></script>
+                    </div>
                 </div>
                 <div class="footer_child footer_mid">
                     <div>
@@ -441,9 +463,5 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
 </body>
 </html>
 
-<?php 
-}else {
-    header("Location: index.php");
-    exit();
+<?php
 }
-?>

@@ -1,8 +1,12 @@
 <?php
-session_start();
+include("config.php");
+include("firebase_connect.php");
 
-if(isset($_SESSION['id']) && isset($_SESSION['name'])){
+if(!isset($_SESSION['user'])){
+    header("location: index.php");
+}
 
+else{
 ?>
 
 
@@ -16,6 +20,8 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/shop.css">
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -30,16 +36,16 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                         <a href="shop.php">SHOP</a>
                     </li>
                     <li>
-                        <a href="">OUR STORY</a>
+                        <a href="outstory.php">OUR STORY</a>
                     </li>
                     <li>
-                        <a href="">BLOG</a>
+                        <a href="blog.php">BLOG</a>
                     </li>
                     <li>
                         <a href="sale.php">SALE</a>
                     </li>
                     <li>
-                        <a href="">CONTACT</a>
+                        <a href="contact.php">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -61,12 +67,10 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                     <div class="header_right_box_user">
                         <i class="fa-regular fa-user header_right_icon_user"></i>
                     </div>  
-                    <a href=""><?php echo $_SESSION['name']; ?></a>
+                    <a href=""><?php echo $_SESSION['user']['name']; ?></a>
                     <div class="login_tab">
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
-                            <div class="space space_tab"></div>
-                            <li><a href="">Hỗ trợ</a></li>
                             <div class="space space_tab"></div>
                             <li><a href="index.php">Đăng xuất</a></li>
                         </ul>
@@ -192,9 +196,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
             </div>
         </header>
 
-
-
-        
+ 
         <div class="contain">
             <div class="contain_background">
                 <img src="assets/img/background.webp" alt="">
@@ -329,6 +331,22 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
             <div class="footer">
                 <div class="footer_child footer_logo">
                     <a href="">FRAIS</a>
+                    <div id="map">
+                        <script>
+                            function initMap() {
+                                var location = { lat: 21.007, lng: 105.82576};
+                                var map = new google.maps.Map(document.getElementById("map"), {
+                                    zoom: 15,
+                                    center: location
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: location,
+                                    map: map
+                                });
+                            }
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFqyiPh8kFZbDUHCPzmkADnyBCVPE1dRE&callback=initMap"></script>
+                    </div>
                 </div>
                 <div class="footer_child footer_mid">
                     <div>
@@ -380,7 +398,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
         </div>
     </div>
 
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.header_right_icon_bag');
             const modal = document.querySelector('.modal_cart');
@@ -398,13 +416,9 @@ if(isset($_SESSION['id']) && isset($_SESSION['name'])){
                 modal.style.display = 'none';
             });
         });
-    </script>
+    </script> -->
 </body>
 </html>
 
-<?php 
-}else {
-    header("Location: index.php");
-    exit();
+<?php
 }
-?>

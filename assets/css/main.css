@@ -116,7 +116,7 @@
 
 .login_tab{
     width: 200px;
-    height: 150px;  
+    height: auto;  
     top: 38px;
     left: 0;
     border-radius: 5px;
@@ -215,17 +215,17 @@
     position: relative;
 }
 
-.header_right_icon_bag:focus .modal_cart{
+/* .header_right_icon_bag:focus .modal_cart{
     display: flex !important;
-}
+} */
 
 /* .close_inf_cart:focus .modal_cart{
     display: none !important;
 } */
 
-.close_inf_cart{
+/* .close_inf_cart{
     display: block !important;
-}
+} */
 
 .inf_bag{
     width: 350px;
@@ -758,7 +758,7 @@
     background-color: #f2dede;
     color: #a94442;
     padding: 10px;
-    width: 200px;
+    width: 243px;
     border-radius: 5px;
 }
 
@@ -797,6 +797,7 @@
 }
 
 .footer_logo{
+    width: 500px !important;
     justify-content: start;
     align-items: center;
 }
@@ -812,6 +813,7 @@
     color: black;
     font-size: 30px;
     font-weight: 50 !important;
+    margin-bottom: 30px;
 }
 
 .footer_child_title{

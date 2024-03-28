@@ -13,13 +13,11 @@ session_start();
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/shop.css">
     <link rel="stylesheet" type="text/css" href="assets/css/test.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/test.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/img/no_item.jpg" type="image/x-icon">
-    <script type="text/javascript" src="assets/js/login.js"></script>
+    <script type="text/javascript" src="login.js"></script>
 </head>
 <body>
     <div class="site">
@@ -195,7 +193,7 @@ session_start();
                 <div>
                     <span>HANDCRAFTED ORGANIC SOAPS & CANDLES</span><br>
                     <h1>JUST LIKE NATURE INTENDED</h1>
-                    <a href="">Shop Now</a>
+                    <button>Shop Now</button>
                 </div>
             </div>
             <h1 class="contain_title_fav">SHOP OUR FAVORITES</h1>
@@ -315,22 +313,6 @@ session_start();
             <div class="footer">
                 <div class="footer_child footer_logo">
                     <a href="">FRAIS</a>
-                    <div id="map">
-                        <script>
-                            function initMap() {
-                                var location = { lat: 21.007, lng: 105.82576};
-                                var map = new google.maps.Map(document.getElementById("map"), {
-                                    zoom: 15,
-                                    center: location
-                                });
-                                var marker = new google.maps.Marker({
-                                    position: location,
-                                    map: map
-                                });
-                            }
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFqyiPh8kFZbDUHCPzmkADnyBCVPE1dRE&callback=initMap"></script>
-                    </div>
                 </div>
                 <div class="footer_child footer_mid">
                     <div>
@@ -389,7 +371,7 @@ session_start();
                 <div class="auth_form_left">
                     <h1>Welcome!</h1>
                     <span>Login</span>
-                    <form action="auth_login.php" class="login_form" method = "post">
+                    <form action="test_auth_login.php" class="login_form" method = "post">
                         <label for="email" class="label_input" >Email</label>
 
 
@@ -410,7 +392,7 @@ session_start();
                         <div class="sign_up">
                             <span>Don't have an account?</span>
                             <!-- <p class="login_to_signup">Sign up now</p> -->
-                            <a class="login_to_signup" href="signup.php">Sign up now</a>
+                            <a class="login_to_signup" href="test_signup.php">Sign up now</a>
                         </div>
                     </form>
                 </div>

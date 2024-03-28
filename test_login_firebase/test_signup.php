@@ -13,13 +13,11 @@ session_start();
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/shop.css">
     <link rel="stylesheet" type="text/css" href="assets/css/test.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/test.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/img/no_item.jpg" type="image/x-icon">
-    <script type="text/javascript" src="assets/js/login.js"></script>
+    <script type="text/javascript" src="signup.js"></script>
 </head>
 <body>
     <div class="site">
@@ -195,7 +193,7 @@ session_start();
                 <div>
                     <span>HANDCRAFTED ORGANIC SOAPS & CANDLES</span><br>
                     <h1>JUST LIKE NATURE INTENDED</h1>
-                    <a href="">Shop Now</a>
+                    <button>Shop Now</button>
                 </div>
             </div>
             <h1 class="contain_title_fav">SHOP OUR FAVORITES</h1>
@@ -315,22 +313,6 @@ session_start();
             <div class="footer">
                 <div class="footer_child footer_logo">
                     <a href="">FRAIS</a>
-                    <div id="map">
-                        <script>
-                            function initMap() {
-                                var location = { lat: 21.007, lng: 105.82576};
-                                var map = new google.maps.Map(document.getElementById("map"), {
-                                    zoom: 15,
-                                    center: location
-                                });
-                                var marker = new google.maps.Marker({
-                                    position: location,
-                                    map: map
-                                });
-                            }
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFqyiPh8kFZbDUHCPzmkADnyBCVPE1dRE&callback=initMap"></script>
-                    </div>
                 </div>
                 <div class="footer_child footer_mid">
                     <div>
@@ -381,49 +363,71 @@ session_start();
             <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
     </div>
-
-    <div class="modal modal_login">
+    <div class="modal modal_signup">
         <div class="modal__overlay"></div>
         <div class="modal__body">
-            <div class="auth_form">
+            <div class="auth_form auth_form_signup">
                 <div class="auth_form_left">
                     <h1>Welcome!</h1>
-                    <span>Login</span>
-                    <form action="auth_login.php" class="login_form" method = "post">
-                        <label for="email" class="label_input" >Email</label>
-
-
+                    <span>Sign up</span>
+                    <form action="test_insert_signup.php" class="login_form" method = "post">
                         <?php
-                        if(isset($_SESSION['error'])) {
-                            echo "<p class='error_title' id='error_title_login'>{$_SESSION['error']}</p>";
-                            unset($_SESSION['error']); // clear the error message after displaying
-                        }
+                            if(isset($_SESSION['error_sign'])) {
+                                echo "<p class='error_title' id='error_title_signup'>{$_SESSION['error_sign']}</p>";
+                                unset($_SESSION['error_sign']); // clear the error message after displaying
+                            }
                         ?>
-                        
-                        <input type="email" name="email" id="email"><br>
-                        <label for="password" class="label_input">Password</label>
-                        <input type="password" name="password" id="password">
-                        <div class="forgot_and_submit">
-                            <a href="">Forgot your password?</a>
-                            <button id="btn_login" type="submit">Login</button>
-                        </div>
-                        <div class="sign_up">
-                            <span>Don't have an account?</span>
-                            <!-- <p class="login_to_signup">Sign up now</p> -->
-                            <a class="login_to_signup" href="signup.php">Sign up now</a>
+                        <label for="username_sign" class="label_input" >User Name</label>
+                        <input type="text" name="username_sign" id="username_sign"><br>
+                        <label for="email_sign" class="label_input" >Email</label>
+                        <input type="email" name="email_sign" id="email_sign"><br>
+                        <label for="password_sign" class="label_input">Password</label>
+                        <input type="password" name="password_sign" id="password_sign">
+                        <div class="forgot_and_submit sign_up_form">
+                            <p class="signup_to_login">Alreadly have an account yet? Login</p>
+                            <button id="btn_signup" type="submit">Sign up</button>
                         </div>
                     </form>
                 </div>
                 <div class="auth_form_right">
                     <img src="assets/img/login_img.avif" alt="">
-                    <div class="close_form">
+                    <div class="close_form close_form_signup">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="modal" id="modal_signup_success">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth_form">
+                <div class="auth_form_left">
+                    <h1>Welcome!</h1>
+                    <span>Sign up</span>
+                    <div class="signup_success_content">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <?php
+                            if(isset($_SESSION['success'])) {
+                                echo "<span class='success_title' id='success_title_signup'>{$_SESSION['success']}</span>";
+                                unset($_SESSION['success']); // clear the success message after displaying
+                            }
+                        ?>
+                        <div class="signup_success_content_session">
+                            <button id="btn_exit_signup_success">Exit</button>
+                            <button id="success_to_login">Login</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth_form_right">
+                    <img src="assets/img/login_img.avif" alt="">
+                    <div class="close_form close_form_signup_success">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- hien thong tin cart -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -445,7 +449,7 @@ session_start();
         });
     </script>
     <!-- hien form login -->
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.login');
             const modal = document.querySelector('.modal_login');
@@ -454,9 +458,9 @@ session_start();
                 modal.style.display = 'flex';
             });
         });
-    </script>
+    </script> -->
     <!-- dong form login -->
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.close_form');
             const modal = document.querySelector('.modal_login');
@@ -465,8 +469,83 @@ session_start();
                 modal.style.display = 'none';
             });
         });
+    </script> -->
+
+    <!-- dong form signup -->
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.close_form_signup');
+            const modal = document.querySelector('.modal_signup');
+
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    </script> -->
+    <!-- signup to login -->
+<!-- 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.signup_to_login');
+            const modal = document.querySelector('.modal_signup');
+            const login_form = document.querySelector('.modal_login');
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+                login_form.style.display = ('flex');
+            });
+        });
+    </script>    -->
+
+    <!-- login to signup -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.login_to_signup');
+            const modal = document.querySelector('.modal_signup');
+            const login_form = document.querySelector('.modal_login');
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                login_form.style.display = ('none');
+            });
+        });
+    </script>    -->
+
+    <!-- dong sign up success -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.close_form_signup_success');
+            const modal = document.querySelector('.modal_signup_success');
+
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
     </script>
 
+    <!-- btn exit sign up success -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.getElementById('btn_exit_signup_success');
+            const modal = document.querySelector('.modal_signup_success');
+
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    </script>
+
+    <!-- signup success to login -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.getElementById('success_to_login');
+            const modal = document.querySelector('.modal_signup_success');
+            const login_form = document.querySelector('.modal_login');
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+                login_form.style.display = ('flex');
+            });
+        });
+    </script>   
 
 </body>
 </html>

@@ -104,6 +104,10 @@
     width: 100%;
 }
 
+.item img:hover{
+    cursor: pointer;
+}
+
 .title{
     margin-top: 45px;
     margin-bottom: 10px;
@@ -250,12 +254,19 @@ input:focus{
 }
 
 .sign_up{
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 15px;
+    display: flex;
+}
+
+.sign_up p{
+    margin: 0 0 0 5px;
 }
 
 .sign_up a{
     color: #5e5e4a;
+    display: block;
+    margin-left: 5px;
 }
 
 .auth_form_right{
@@ -281,6 +292,10 @@ input:focus{
     position: absolute;
     top: 15px;
     right: 15px;
+}
+
+.close_form:hover{
+    cursor: pointer;
 }
 
 .close_form:focus.modal{

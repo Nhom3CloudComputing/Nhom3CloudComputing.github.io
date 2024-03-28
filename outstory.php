@@ -17,8 +17,9 @@ else{
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/outstory.css">
     <link rel="stylesheet" type="text/css" href="assets/css/shop.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -195,85 +196,51 @@ else{
             </div>
         </header>
     </div>
-    <div class=" body_contact">
-        <div class ="img1">
-            <img class ="image1" src="assets/img/img1.webp" alt="">
-        </div>
-        <div class="text_img1">
-            <div class = "title_no1">
-                <span> GET IN TOUCH </span>
-            </div>
-            <div class = "inf_no1">
-                <div class = "left_no1">
-                    <h2>Opening Hours</h2>
-                    <span> Mon - Fri: 8am - 8pm </span>       
-                    <span> ​​Saturday: 9am - 7pm </span>
-                    <span> ​​Sunday: 9am - 8pm </span>
-                </div>
 
-                <div class = "right_no1">
-                    <h2>Opening Hours</h2>
-                    <span> 500 Terry Francine Street </span>       
-                    <span> ​San Francisco, CA 94158 </span>
-                    <span> ​123-456-7890 </span>
-                </div>
+    <div class=" body_contact">
+        <div class ="imge">
+            <img class ="image1" src="assets/img/image_out_story.jpg" alt="">
+        </div>
+        <div class="text_header">
+            <div class = "title_text">
+                <br><br><br><br>
+                <span>RE-CONNECTING </span><br>
+                <span>HUMANS TO</span><br>
+                <span>NATURE </span>
             </div>
-            <div class = "mail1">
-                <span>info@mysite.com</span>
+            <div class = "text_text">
+                <span>I'm a paragraph. 
+                     Click here to add your own text and edit me. 
+                     Let your users get to know you
+                </span>
             </div>
         </div>
     </div>
 
-    <div class ="body_conect">
-        <div class = "inf_cnt">
-            <div class = "title_no2">
-                <span>LET'S STAY </span>
-                <span>CONNECTED</span>
+    <div class ="body_story">
+        <div class = "left_body">
+            <div class = "title_body">
+                <br><br><br><br><br><br>
+                <span>MEET ALISON</span>
             </div>
-            <div class = "inf_no2">
-                <span>
-                    If you have questions or special inquiries,you're welcome to contact me or fill out this form</span>
+            <div class = "text_body">
+                <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                <br>
+                <br>
+                <span>This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</span>
             </div>
-            <div class = "formm">
-                <div class = "infor_cnt">
-                    <div class = "left_cnt">
-                        <span>First Name*</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 35px;" >
-                    </div>
-                    <div class = "right_cnt">
-                        <span>Last Name*</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 35px;" >
-                    </div>
-                </div>
-                <div class = "infor_cnt">
-                    <div class = "left_cnt">
-                        <span>First Name*</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 35px;" >
-                    </div>
-                    <div class = "right_cnt">
-                        <span>Last Name*</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 35px;" >
-                    </div>
-                </div>
-                <div class = "mail_cnt">
-                        <span>Leave me a message...</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 100px; width: 400px;">
-                </div>
-                <div class = "submitt">
-                    <input type="submit" style="font-family: sans-serif; color: white; background-color: #5E5E4A; height: 40px; width: 90px;">
-                </div>   
-            </div>
+            
          </div>    
 
-         <div class = "img_cnt">
-            <img src="">
+         <div class = "right_body right_outstory">
+           
          </div>
     </div>
 
     <div class = "back_video">
         <div class="video_back">
             <video autoplay muted loop class="myVideo">
-                <source src="assets/img/file.mp4" type="video/mp4">
+                <source src="./assets/img/file.mp4" type="video/mp4">
               </video>
         </div>
     </div>
@@ -337,6 +304,7 @@ else{
         
     </div>
     
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.header_right_icon_bag');

@@ -9,6 +9,7 @@ if(!isset($_SESSION['user'])){
 else{
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +18,9 @@ else{
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/blog.css">
     <link rel="stylesheet" type="text/css" href="assets/css/shop.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -195,88 +197,281 @@ else{
             </div>
         </header>
     </div>
-    <div class=" body_contact">
-        <div class ="img1">
-            <img class ="image1" src="assets/img/img1.webp" alt="">
-        </div>
-        <div class="text_img1">
-            <div class = "title_no1">
-                <span> GET IN TOUCH </span>
+
+    <div class = "body_blog">
+        <div class ="main_body">
+            <div class = "header_blog">
+                <div class = "title_blog">
+                    <span>BLOG</span>
+                </div>
+                <div class = "text_down_title">
+                    <span>I'm a paragraph. Click here to add your own text and edit me.</span>
+                </div>
             </div>
-            <div class = "inf_no1">
-                <div class = "left_no1">
-                    <h2>Opening Hours</h2>
-                    <span> Mon - Fri: 8am - 8pm </span>       
-                    <span> ​​Saturday: 9am - 7pm </span>
-                    <span> ​​Sunday: 9am - 8pm </span>
+            <div class = "all_post">
+                <div class ="space_box">
+                    <span> All Post</span>
+                </div>
+                <div class="main_post">
+                    <div class = "postt">
+                        <div class = "image_post">
+                            <img class ="image_for_post" src="./assets/img/image_blog_1.jpg" alt="" style="height: 100%; width: 100%;">
+                        </div>
+                        <div class = "box_post">
+                            <div class = "infor_user">
+                                <div class = "image_user">
+                                    <i class="fa-regular fa-user" style="color: back;"></i>
+                                    </div>
+                                <div class = "name_date">
+                                    <div class = "name_user">
+                                        <span>Admin<i class="fa-solid fa-crown"></i></span>
+                                    </div>
+                                    <div class = "date">
+                                        <span>May 31, 2023 ㅤ• 1 min </span>
+                                    </div>
+                                </div>
+                                <div class = "dots">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class = "text_of_post">
+                                <h5>Re-Using Candles</h5>
+                                <div class = "text_post_downt">
+                                    <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                                </div>  
+                            </div>
+                            <hr  width="90%" align="center" color="#CCCCCC" size="1px"/>
+                            <div class = "feel_post">
+                                <div class ="active">
+                                    <div class = "spann">
+                                        <span>23 views ㅤ0 comments</span>
+                                    </div>
+                                </div>
+                                <div class = "heart">
+                                    <i class="fa-regular fa-heart" style="color: #e84a43;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "postt">
+                        <div class = "image_post">
+                            <img class ="image_for_post" src="./assets/img/image_blog_2.jpg" alt="" style="height: 100%; width: 100%;">
+                        </div>
+                        <div class = "box_post">
+                            <div class = "infor_user">
+                                <div class = "image_user">
+                                    <i class="fa-regular fa-user" style="color: back;"></i>
+                                    </div>
+                                <div class = "name_date">
+                                    <div class = "name_user">
+                                        <span>Admin<i class="fa-solid fa-crown"></i></span>
+                                    </div>
+                                    <div class = "date">
+                                        <span>May 31, 2023 ㅤ• 1 min </span>
+                                    </div>
+                                </div>
+                                <div class = "dots">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class = "text_of_post">
+                                <h5>How to Pick the Right Scent </h5>
+                                <div class = "text_post_downt">
+                                    <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                                </div>  
+                            </div>
+                            <hr  width="90%" align="center" color="#CCCCCC" size="1px"/>
+                            <div class = "feel_post">
+                                <div class ="active">
+                                    <div class = "spann">
+                                        <span>23 views ㅤ0 comments</span>
+                                    </div>
+                                </div>
+                                <div class = "heart">
+                                    <i class="fa-regular fa-heart" style="color: #e84a43;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class = "right_no1">
-                    <h2>Opening Hours</h2>
-                    <span> 500 Terry Francine Street </span>       
-                    <span> ​San Francisco, CA 94158 </span>
-                    <span> ​123-456-7890 </span>
+                <div class="main_post">
+                    <div class = "postt">
+                        <div class = "image_post">
+                            <img class ="image_for_post" src="./assets/img/image_blog_3.jpg" alt="" style="height: 100%; width: 100%;">
+                        </div>
+                        <div class = "box_post">
+                            <div class = "infor_user">
+                                <div class = "image_user">
+                                    <i class="fa-regular fa-user" style="color: back;"></i>
+                                    </div>
+                                <div class = "name_date">
+                                    <div class = "name_user">
+                                        <span>Admin<i class="fa-solid fa-crown"></i></span>
+                                    </div>
+                                    <div class = "date">
+                                        <span>May 31, 2023 ㅤ• 1 min </span>
+                                    </div>
+                                </div>
+                                <div class = "dots">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class = "text_of_post">
+                                <h5>5 Ways to Take Care of Your Candles</h5>
+                                <div class = "text_post_downt">
+                                    <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                                </div>  
+                            </div>
+                            <hr  width="90%" align="center" color="#CCCCCC" size="1px"/>
+                            <div class = "feel_post">
+                                <div class ="active">
+                                    <div class = "spann">
+                                        <span>23 views ㅤ0 comments</span>
+                                    </div>
+                                </div>
+                                <div class = "heart">
+                                    <i class="fa-regular fa-heart" style="color: #e84a43;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class = "postt">
+                        <div class = "image_post">
+                            <img class ="image_for_post" src="./assets/img/image_blog_4.jpg" alt="" style="height: 100%; width: 100%;">
+                        </div>
+                        <div class = "box_post">
+                            <div class = "infor_user">
+                                <div class = "image_user">
+                                    <i class="fa-regular fa-user" style="color: back;"></i>
+                                    </div>
+                                <div class = "name_date">
+                                    <div class = "name_user">
+                                        <span>Admin<i class="fa-solid fa-crown"></i></span>
+                                    </div>
+                                    <div class = "date">
+                                        <span>May 31, 2023 ㅤ• 1 min </span>
+                                    </div>
+                                </div>
+                                <div class = "dots">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class = "text_of_post">
+                                <h5>How to Hand Make Your Own Soap?</h5>
+                                <div class = "text_post_downt">
+                                    <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                                </div>  
+                            </div>
+                            <hr  width="90%" align="center" color="#CCCCCC" size="1px"/>
+                            <div class = "feel_post">
+                                <div class ="active">
+                                    <div class = "spann">
+                                        <span>23 views ㅤ0 comments</span>
+                                    </div>
+                                </div>
+                                <div class = "heart">
+                                    <i class="fa-regular fa-heart" style="color: #e84a43;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="main_post">
+                    <div class = "postt">
+                        <div class = "image_post">
+                            <img class ="image_for_post" src="./assets/img/image_blog_5.jpg" alt="" style="height: 100%; width: 100%;">
+                        </div>
+                        <div class = "box_post">
+                            <div class = "infor_user">
+                                <div class = "image_user">
+                                    <i class="fa-regular fa-user" style="color: back;"></i>
+                                    </div>
+                                <div class = "name_date">
+                                    <div class = "name_user">
+                                        <span>Admin<i class="fa-solid fa-crown"></i></span>
+                                    </div>
+                                    <div class = "date">
+                                        <span>May 31, 2023 ㅤ• 1 min </span>
+                                    </div>
+                                </div>
+                                <div class = "dots">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class = "text_of_post">
+                                <h5>Put Together the Perfect Holiday Gift </h5>
+                                <div class = "text_post_downt">
+                                    <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                                </div>  
+                            </div>
+                            <hr  width="90%" align="center" color="#CCCCCC" size="1px"/>
+                            <div class = "feel_post">
+                                <div class ="active">
+                                    <div class = "spann">
+                                        <span>23 views ㅤ0 comments</span>
+                                    </div>
+                                </div>
+                                <div class = "heart">
+                                    <i class="fa-regular fa-heart" style="color: #e84a43;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "postt">
+                        <div class = "image_post">
+                            <img class ="image_for_post" src="./assets/img/image_blog_6.jpg" alt="" style="height: 100%; width: 100%;">
+                        </div>
+                        <div class = "box_post">
+                            <div class = "infor_user">
+                                <div class = "image_user">
+                                    <i class="fa-regular fa-user" style="color: back;"></i>
+                                    </div>
+                                <div class = "name_date">
+                                    <div class = "name_user">
+                                        <span>Admin<i class="fa-solid fa-crown"></i></span>
+                                    </div>
+                                    <div class = "date">
+                                        <span>May 31, 2023 ㅤ• 1 min </span>
+                                    </div>
+                                </div>
+                                <div class = "dots">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class = "text_of_post">
+                                <h5> The Remedies That Made Us</h5>
+                                <div class = "text_post_downt">
+                                    <span>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</span>
+                                </div>  
+                            </div>
+                            <hr  width="90%" align="center" color="#CCCCCC" size="1px"/>
+                            <div class = "feel_post">
+                                <div class ="active">
+                                    <div class = "spann">
+                                        <span>23 views ㅤ0 comments</span>
+                                    </div>
+                                </div>
+                                <div class = "heart">
+                                    <i class="fa-regular fa-heart" style="color: #e84a43;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class = "mail1">
-                <span>info@mysite.com</span>
+
             </div>
         </div>
     </div>
 
-    <div class ="body_conect">
-        <div class = "inf_cnt">
-            <div class = "title_no2">
-                <span>LET'S STAY </span>
-                <span>CONNECTED</span>
-            </div>
-            <div class = "inf_no2">
-                <span>
-                    If you have questions or special inquiries,you're welcome to contact me or fill out this form</span>
-            </div>
-            <div class = "formm">
-                <div class = "infor_cnt">
-                    <div class = "left_cnt">
-                        <span>First Name*</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 35px;" >
-                    </div>
-                    <div class = "right_cnt">
-                        <span>Last Name*</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 35px;" >
-                    </div>
-                </div>
-                <div class = "infor_cnt">
-                    <div class = "left_cnt">
-                        <span>First Name*</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 35px;" >
-                    </div>
-                    <div class = "right_cnt">
-                        <span>Last Name*</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 35px;" >
-                    </div>
-                </div>
-                <div class = "mail_cnt">
-                        <span>Leave me a message...</span><br>
-                        <input type="text" name="fname" style="background-color: #D7D7CB; height: 100px; width: 400px;">
-                </div>
-                <div class = "submitt">
-                    <input type="submit" style="font-family: sans-serif; color: white; background-color: #5E5E4A; height: 40px; width: 90px;">
-                </div>   
-            </div>
-         </div>    
+    
 
-         <div class = "img_cnt">
-            <img src="">
-         </div>
-    </div>
-
-    <div class = "back_video">
-        <div class="video_back">
-            <video autoplay muted loop class="myVideo">
-                <source src="assets/img/file.mp4" type="video/mp4">
-              </video>
-        </div>
-    </div>
+    
 
     <div class = "body_contact_us">
         <div class = "back_colum_1">

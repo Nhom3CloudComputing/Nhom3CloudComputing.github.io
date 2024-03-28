@@ -16,16 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//dong thong tin cart qua icon
-document.addEventListener('DOMContentLoaded', function() {
-    const closeForm = document.querySelector('.close_inf_cart');
-    const modal = document.querySelector('.modal_cart');
-
-    closeForm.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-});
-
 //dong form login 
 document.addEventListener('DOMContentLoaded', function() {
     const closeForm = document.querySelector('.close_form');
@@ -35,6 +25,32 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.style.display = 'none';
     });
 });
+
+//hien cart qua icon
+document.addEventListener('DOMContentLoaded', function() {
+    const closeForm = document.querySelector('.close_inf_cart');
+    const modal = document.querySelector('.modal_cart');
+
+    closeForm.addEventListener('click', function() {
+        modal.style.display = 'flex';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const closeForm = document.querySelector('.close_inf_cart');
+    const modal = document.querySelector('.modal_cart');
+
+    // Check if the elements are found
+    if (closeForm && modal) {
+        closeForm.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    } else {
+        console.error("Close button or modal not found.");
+    }
+});
+
+
 
 //tim kiem san pham qua ten san pham
 
@@ -95,9 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //gan gia tri cho the so luong trong thong tin san pham
 
 document.getElementById("input_quantity_product").value = "1";
-
 //
-
 document.addEventListener('DOMContentLoaded', function(){
     var select = this.documentElement.querySelectorAll('.product_title_click');
     select.forEach(function(select){

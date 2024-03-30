@@ -49,9 +49,11 @@ else{
                     </li>
                 </ul>
             </div>
-            <div class="header_logo">
-                FRAIS
-            </div>
+            <a href="home.php">
+                <div class="header_logo">
+                    FRAIS
+                </div>
+            </a>
             <div class="header_right">
                 <div class="header_right_search">
                     <div>
@@ -66,7 +68,7 @@ else{
                 <div class="login">
                     <div class="header_right_box_user">
                         <i class="fa-regular fa-user header_right_icon_user"></i>
-                    </div>  
+                    </div>
                     <a href=""><?php echo $_SESSION['user']['name']; ?></a>
                     <div class="login_tab">
                         <ul>
@@ -228,7 +230,7 @@ else{
                     <div class="contain_fav2_right">
                         <h1>PROBIOTIC CLEANSING BARS</h1>
                         <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
-                        <a href="">Shop Soap</a>
+                        <a href="soaps.php">Shop Soap</a>
                     </div>
                 </div>
             </div>
@@ -291,7 +293,7 @@ else{
             <div class="contain_naturally_simple">
                 <h1>NATURALLY SIMPLE</h1>
                 <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
-                <a href="">Our Story</a>
+                <a href="outstory.php">Our Story</a>
                 <div class="box_img_naturally">
                     <img src="assets/img/background_naturally.webp" class="naturally_background" alt="">
                     <img src="assets/img/naturally.webp" class="naturally_img" alt="">
@@ -332,7 +334,7 @@ else{
             </div>
             <div class="footer">
                 <div class="footer_child footer_logo">
-                    <a href="">FRAIS</a>
+                    <a href="home.php">FRAIS</a>
                     <div id="map">
                         <script>
                             function initMap() {
@@ -352,11 +354,11 @@ else{
                 </div>
                 <div class="footer_child footer_mid">
                     <div>
-                        <a href="" class="footer_child_title">SHOP</a>
+                        <a href="shop.php" class="footer_child_title">SHOP</a>
                         <ul>
-                            <li><a href="">CANDLES</a></li>
-                            <li><a href=""></a>SOAPAS</li>
-                            <li><a href=""></a>SALE</li>
+                            <li><a href="candles.php">CANDLES</a></li>
+                            <li><a href="soaps.php"></a>SOAPAS</li>
+                            <li><a href="sale.php"></a>SALE</li>
                             <li><a href=""></a>GIFT CARD</li>
                         </ul>
                     </div>
@@ -373,30 +375,30 @@ else{
                     <div>
                         <a href="" class="footer_child_title">FRAIS</a>
                         <ul>
-                            <li><a href="">OUR STORY</a></li>
-                            <li><a href="">CONTACT US</a></li>
+                            <li><a href="outstory.php">OUR STORY</a></li>
+                            <li><a href="contact.php">CONTACT US</a></li>
                             <li><a href="">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="footer_child_title_bottom">
-                        <a href="" class="footer_child_title">CONTACT US</a>
+                        <a href="contact.php" class="footer_child_title">CONTACT US</a>
                         <ul>
                             <li><a href="">012 345 6789</a></li>
                             <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
                         </ul>
                         <div class="contact_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-pinterest-p"></i>
+                            <a href="https://m.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest-p"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="social">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://m.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
     </div>
 

@@ -32,6 +32,7 @@
     align-items: center;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 
@@ -106,5 +107,4 @@
 }
 
 .signup_to_login{
-    text-decoration: none;
 }

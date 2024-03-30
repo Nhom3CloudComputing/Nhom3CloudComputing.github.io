@@ -48,9 +48,11 @@ else{
                     </li>
                 </ul>
             </div>
-            <div class="header_logo">
-                FRAIS
-            </div>
+            <a href="home.php">
+                <div class="header_logo">
+                    FRAIS
+                </div>
+            </a>
             <div class="header_right">
                 <div class="header_right_search">
                     <div>

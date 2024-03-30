@@ -42,9 +42,11 @@ session_start();
                     </li>
                 </ul>
             </div>
-            <div class="header_logo">
-                FRAIS
-            </div>
+            <a href="index.php">
+                <div class="header_logo">
+                    FRAIS
+                </div>
+            </a>
             <div class="header_right">
                 <div class="header_right_search">
                     <div>
@@ -405,7 +407,7 @@ session_start();
                 <div class="auth_form_right">
                     <img src="assets/img/login_img.avif" alt="">
                     <div class="close_form close_form_signup_success">
-                        <i class="fa-solid fa-xmark"></i>
+                        <a href="index.php"><i class="fa-solid fa-xmark"></i></a>
                     </div>
                 </div>
             </div>

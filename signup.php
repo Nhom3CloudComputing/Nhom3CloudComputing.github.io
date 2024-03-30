@@ -42,9 +42,11 @@ session_start();
                     </li>
                 </ul>
             </div>
-            <div class="header_logo">
-                FRAIS
-            </div>
+            <a href="index.php">
+                <div class="header_logo">
+                    FRAIS
+                </div>
+            </a>
             <div class="header_right">
                 <div class="header_right_search">
                     <div>
@@ -365,25 +367,33 @@ session_start();
                             <li><a href="">012 345 6789</a></li>
                             <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
                         </ul>
-                        <div class="contact_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-pinterest-p"></i>
+                        <div class="social">
+                            <a href="https://m.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest-p"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="social">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://m.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
     </div>
     <div class="modal modal_signup">
         <div class="modal__overlay"></div>
         <div class="modal__body">
             <div class="auth_form auth_form_signup">
+                <div class="auth_form_right">
+                    <img src="assets/img/login_img.avif" alt="">
+                    <!-- <div class="close_form close_form_signup">
+                        <a href="index.php">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div> -->
+                </div>
                 <div class="auth_form_left">
                     <h1>Welcome!</h1>
                     <span>Sign up</span>
@@ -402,13 +412,10 @@ session_start();
                         <input type="password" name="password_sign" id="password_sign">
                         <div class="forgot_and_submit sign_up_form">
                             <!-- <p class="signup_to_login">Alreadly have an account yet? Login</p> -->
-                            <a href="index.php" class="signup_to_login">Alreadly have an account yet? Login</a>
+                            <span>Alreadly have an account yet? <a href="index.php" class="signup_to_login">Login</a></span>
                             <button id="btn_signup" type="submit">Sign up</button>
                         </div>
                     </form>
-                </div>
-                <div class="auth_form_right">
-                    <img src="assets/img/login_img.avif" alt="">
                     <div class="close_form close_form_signup">
                         <a href="index.php">
                             <i class="fa-solid fa-xmark"></i>

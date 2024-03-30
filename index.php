@@ -43,9 +43,11 @@ session_start();
                     </li>
                 </ul>
             </div>
-            <div class="header_logo">
-                FRAIS
-            </div>
+            <a href="index.php">
+                <div class="header_logo">
+                    FRAIS
+                </div>
+            </a>
             <div class="header_right">
                 <div class="header_right_search">
                     <div>
@@ -60,8 +62,9 @@ session_start();
                 <div class="login">
                     <div class="header_right_box_user">
                         <i class="fa-regular fa-user header_right_icon_user"></i>
-                    </div>  
-                    <a href="">Login</a>
+                    </div>
+                    <p>Login</p>  
+                    <!-- <a href="">Login</a> -->
                     <!-- <div class="login_tab">
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
@@ -367,18 +370,18 @@ session_start();
                             <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
                         </ul>
                         <div class="contact_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-pinterest-p"></i>
+                            <a href="https://m.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest-p"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="social">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://m.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
     </div>
 

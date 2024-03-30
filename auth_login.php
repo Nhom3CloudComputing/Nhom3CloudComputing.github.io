@@ -17,7 +17,7 @@ else{
     $data = json_decode($retrieve, 1);
 
     if(count($data) == 0){
-        $_SESSION['error'] = "Email is registered";
+        $_SESSION['error'] = "Email is not registered";
     }
     else{
         $id =  array_keys($data)[0];

@@ -100,8 +100,21 @@
     background-color: #5e5e4a;
 }
 
+.item a{
+    display: block;
+    width: 100%;
+    height: 497px;
+    overflow: hidden;
+}
+
 .item img{
     width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.item a:hover img{
+    transform: scale(1.2);
 }
 
 .item img:hover{
@@ -109,35 +122,43 @@
 }
 
 .title{
-    margin-top: 45px;
+    margin-top: 25px;
     margin-bottom: 10px;
     display: block;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 .price_sale{
     text-decoration: line-through;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 .price{
     margin: 10px 0;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 .add_item_to_card{
-    width: 320px;
+    width: 370px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px auto 0;
     background-color: #ffffff;
+    color: black;
+}
+
+.add_item_to_card:not(hover){
+    transition: background-color 1s;
+    background-color: #ffffff;
 }
 
 .add_item_to_card:hover{
+    transition: background-color 1s;
     background-color: #5e5e4a;
     color: white;
 }
+
 
 /* no item */
 

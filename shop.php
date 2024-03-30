@@ -221,7 +221,7 @@ else{
                     <span class="note">This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</span>
                     <div class="list_item_right">
                         <div class="right_sorf">
-                            <span>000item</span>
+                            <span>4 item</span>
                         </div>
                         <div class="list_item">
                             <div class="row_item">

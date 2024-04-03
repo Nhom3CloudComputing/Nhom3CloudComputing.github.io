@@ -7,7 +7,7 @@ session_start();
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FRAIS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -17,7 +17,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="assets/img/no_item.jpg" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
     <script type="text/javascript" src="assets/js/signup.js"></script>
 </head>
 <body>

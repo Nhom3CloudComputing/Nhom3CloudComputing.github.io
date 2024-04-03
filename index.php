@@ -7,7 +7,7 @@ session_start();
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FRAIS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -18,7 +18,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="assets/img/no_item.jpg" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
     <script type="text/javascript" src="assets/js/login.js"></script>
 </head>
 <body>
@@ -230,7 +230,9 @@ session_start();
                 <div class="most_popular_list">
                     <div class="most_popular_content">
                         <div class="item item_most_popular" id="item1">
-                            <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                            <a href="">
+                                <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                            </a>
                             <span id="title2" class="title">Pearl Powder</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
@@ -240,7 +242,9 @@ session_start();
                             </div>
                         </div>
                         <div class="item item_most_popular" id="item2">
-                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <a href="">
+                                <img src="assets/img/img_shop/lavender.webp" alt="">
+                            </a>
                             <span id="title2" class="title">Lavender</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
@@ -250,7 +254,9 @@ session_start();
                             </div>
                         </div>
                         <div class="item item_most_popular" id="item3">
-                            <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                            <a href="">
+                                <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                            </a>
                             <span id="title2" class="title">Coco & Sandelwoo</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>
@@ -260,7 +266,9 @@ session_start();
                             </div>
                         </div>
                         <div class="item item_most_popular" id="item4">
-                            <img src="assets/img/img_shop/green_clay.webp" alt="">
+                            <a href="">
+                                <img src="assets/img/img_shop/green_clay.webp" alt="">
+                            </a>
                             <span id="title2" class="title">Green Clay</span>
                             <span class="price_sale">$85.00</span>
                             <span class="price">$80.75</span><br>

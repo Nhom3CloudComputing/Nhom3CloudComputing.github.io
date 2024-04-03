@@ -1,0 +1,4 @@
+url:
+https://script.google.com/macros/s/AKfycbzWJajW7ewHmIrGk7YSTw3R9NCV97s1pdLV3lyrBDvrVuW8BfeSw6zubnpoHapbA2Vt/exec
+id:
+AKfycbzWJajW7ewHmIrGk7YSTw3R9NCV97s1pdLV3lyrBDvrVuW8BfeSw6zubnpoHapbA2Vt

@@ -1,29 +1,22 @@
-<?php
-include("config.php");
-include("firebase_connect.php");
-
-if(!isset($_SESSION['user'])){
-    header("location: index.php");
-}
-
-else{
-?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRAIS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/shop.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/test.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/forgot_pass.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/shop.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="assets/js/signup.js"></script>
 </head>
 <body>
     <div class="site">
@@ -31,23 +24,23 @@ else{
             <div class="header_menu">
                 <ul>
                     <li>
-                        <a href="shop.php">SHOP</a>
+                        <a href="">SHOP</a>
                     </li>
                     <li>
-                        <a href="outstory.php">OUR STORY</a>
+                        <a href="">OUR STORY</a>
                     </li>
                     <li>
-                        <a href="blog.php">BLOG</a>
+                        <a href="">BLOG</a>
                     </li>
                     <li>
-                        <a href="sale.php">SALE</a>
+                        <a href="">SALE</a>
                     </li>
                     <li>
-                        <a href="contact.php">CONTACT</a>
+                        <a href="">CONTACT</a>
                     </li>
                 </ul>
             </div>
-            <a href="home.php">
+            <a href="index.php">
                 <div class="header_logo">
                     FRAIS
                 </div>
@@ -56,7 +49,7 @@ else{
                 <div class="header_right_search">
                     <div>
                         <i class="fa-solid fa-magnifying-glass header_right_icon_search"></i>
-                        <input type="text" id="searchInput" class="header_right_inpput_search" placeholder="Search">
+                        <input type="text" class="header_right_inpput_search" placeholder="Search">
                         <div class="header_right_icon_micro">
                             <i class="fa-solid fa-microphone"></i>
                         </div>
@@ -67,16 +60,14 @@ else{
                     <div class="header_right_box_user">
                         <i class="fa-regular fa-user header_right_icon_user"></i>
                     </div>  
-                    <a href=""><?php echo $_SESSION['user']['name']; ?></a>
-                    <div class="login_tab">
+                    <a href="">Login</a>
+                    <!-- <div class="login_tab">
                         <ul>
                             <li><a href="">Thông tin tài khoản</a></li>
-                            <div class="space space_tab"></div>
                             <li><a href="">Hỗ trợ</a></li>
-                            <div class="space space_tab"></div>
-                            <li><a href="index.php">Đăng xuất</a></li>
+                            <li><a href="">Đăng xuất</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <i class="fa-solid fa-gift header_right_icon_gift"></i>
                 <div class="box_bag">
@@ -197,83 +188,128 @@ else{
                 </div>
             </div>
         </header>
-        <div class="container">
-            <div class="place">
-                <a href="home.php">Home</a>
-                <i class="fa-solid fa-angle-right"></i>
-                <span>MOST POPULAR </span>
-            </div>
-            <div class="content">
-                <div class="left">
-                    <h1>Browse by</h1>
-                    <div class="space_shop"></div>
-                    <ul class="list_left">
-                        <li><a href="shop.php" class="list_item_left">All Products</a></li>
-                        <li><a href="candles.php" class="list_item_left">CANDLES</a></li>
-                        <li><a href="most_popular.php" class="list_item_left list_item_left_active">MOST POPULAR</a></li>
-                        <li><a href="sale.php" class="list_item_left">SALE</a></li>
-                        <li><a href="soaps.php" class="list_item_left">SOAPS</a></li>
-                    </ul>
+        <div class="contain">
+            <div class="contain_background">
+                <img src="assets/img/background.webp" alt="">
+                <div>
+                    <span>HANDCRAFTED ORGANIC SOAPS & CANDLES</span><br>
+                    <h1>JUST LIKE NATURE INTENDED</h1>
+                    <button>Shop Now</button>
                 </div>
-                <div class="right">
-                    <h1>MOST POPULAR</h1>
-                    <!-- <span class="note">This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.</span> -->
-                    <div class="list_item_right">
-                        <div class="right_sorf">
-                            <span>4 item</span>
-                        </div>
-                        <div class="list_item">
-                            <div class="row_item">
-                                <div id="item1" class="item">
-                                    <a href="pearl_powder.php">
-                                        <img src="assets/img/img_shop/pearl_powder.webp" alt="">
-                                    </a>
-                                    <span id="title1" class="title">Pearl Powder</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                </div>
-                                <div class="item" id="item2">
-                                    <a href="lavender.php">
-                                        <img src="assets/img/img_shop/lavender.webp" alt="">
-                                    </a>
-                                    <span id="title2" class="title">Lavender</span>
-                                    <span class="price_sale">$85.00</span>
-                                    <span class="price">$80.75</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
-                                <div class="item" id="item3">
-                                    <a href="coco_sandelwoo.php">
-                                        <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
-                                    </a>
-                                    <span id="title3" class="title">Coco & Sandelwoo</span>
-                                    <span class="price_sale">$15.00</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                    <div class="item_sale">
-                                        <span>SALE</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row_item">
-                                <div id="item4" class="item">
-                                    <a href="green_clay.php">
-                                        <img src="assets/img/img_shop/green_clay.webp" alt="">
-                                    </a>
-                                    <span id="title1" class="title">Green Clay</span>
-                                    <span class="price">$85.00</span><br>
-                                    <button class="add_item_to_card">Add to Card</button>
-                                </div>
-                            </div>
-                            <!-- <div id="no_item">
-                                <h1>No Item !!!!</h1>
-                                <img src="assets/img/img_shop/no_item.jpg" alt="">
-                            </div> -->
-                        </div>
+            </div>
+            <h1 class="contain_title_fav">SHOP OUR FAVORITES</h1>
+            <div class="contain_fav">
+                <div class="contain_fav_left">
+                    <h1>NATURE’S ESSENCE SCENTED CANDLES</h1>
+                    <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                    <a href="shop.php">Shop Candles</a>
+                </div>
+                <div class="contain_fav_right">
+                    <img src="assets/img/img_fav.webp" alt="">
+                </div>
+            </div>
+            <div class="contain_fav2">
+                <div class="contain_fav2_background"></div>
+                <div class="contain_fav2_boder">
+                    <div class="contain_fav2_left">
+                        <img src="assets/img/contain_fav2_left.webp" alt="">
+                    </div>
+                    <div class="contain_fav2_right">
+                        <h1>PROBIOTIC CLEANSING BARS</h1>
+                        <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                        <a href="">Shop Soap</a>
                     </div>
                 </div>
+            </div>
+            <div class="contain_most_popular">
+                <p class="most_popular_title">MOST POPULAR</p>
+                <div class="most_popular_list">
+                    <div class="most_popular_content">
+                        <div class="item item_most_popular" id="item1">
+                            <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                            <span id="title2" class="title">Pearl Powder</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="item item_most_popular" id="item2">
+                            <img src="assets/img/img_shop/lavender.webp" alt="">
+                            <span id="title2" class="title">Lavender</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="item item_most_popular" id="item3">
+                            <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                            <span id="title2" class="title">Coco & Sandelwoo</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="item item_most_popular" id="item4">
+                            <img src="assets/img/img_shop/green_clay.webp" alt="">
+                            <span id="title2" class="title">Green Clay</span>
+                            <span class="price_sale">$85.00</span>
+                            <span class="price">$80.75</span><br>
+                            <button class="add_item_to_card add_item_most_popular">Add to Card</button>
+                            <div class="item_sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="contain_naturally_simple">
+                <h1>NATURALLY SIMPLE</h1>
+                <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                <a href="">Our Story</a>
+                <div class="box_img_naturally">
+                    <img src="assets/img/background_naturally.webp" class="naturally_background" alt="">
+                    <img src="assets/img/naturally.webp" class="naturally_img" alt="">
+                </div>
+            </div>
+            <div class="contain_frais_blog">
+                <h1>THE FRAIS BLOG</h1>
+                <div class="box_log">
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/using_candles.webp" alt="">
+                            <h2>Re-Using Candles</h2>
+                            <span>
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...
+                            </span>
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/pick_the_Right.webp" alt="">
+                            <h2>How to Pick the Right Scent</h2>
+                            <span>
+                            Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your
+                            </span>
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <a href="">
+                            <img src="assets/img/5_way_to_take.webp" alt="">
+                            <h2>5 Ways to Take Care of Your Candles</h2>
+                            <span>
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <a href="" class="learn_more_blog">Learn More</a>
             </div>
             <div class="footer">
                 <div class="footer_child footer_logo">
@@ -329,49 +365,71 @@ else{
                             <li><a href="">012 345 6789</a></li>
                             <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
                         </ul>
-                        <div class="contact_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-pinterest-p"></i>
+                        <div class="social">
+                            <a href="https://m.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest-p"></i></a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://m.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+    </div>
+    <div class="modal modal_signup modal_forgot_pass">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth_form auth_form_signup">
+                <div class="auth_form_right">
+                    <img src="assets/img/login_img.avif" class="img_forgot" alt="">
+                    <!-- <div class="close_form close_form_signup">
+                        <a href="index.php">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="auth_form_left forgot_form">
+                    <h1>Welcome!</h1>
+                    <span>Forgot password</span>
+                    <form action="forgot_pass.php" class="login_form" method = "post">
+                        <label for="email_sign" class="label_input label_forgot_pass" >Email</label>
+                        <input type="email" name="email_sign" id="email_sign"><br>
+                        <div class="forgot_and_submit forgot_pass_div">
+                            <button id="btn_forgot" type="submit">Send</button>
+                            <a href="index.php" id="btn_forgot_cancel">Cancel</a>
+                        </div>
+                        <?php
+                        if(isset($_POST['btn_forgot'])){
+                            $url = "https://script.google.com/macros/s/AKfycbzOa7X1YXG5aIGEBBPgz6rvG0xm2dJ5BoRxOAaOzy_sX0DiuXoLs30aTJnHEbK7yjn_/exec";
+                            $ch = curl_init($url);
+                            curl_setopt_array($ch, [
+                                CURLOPT_RETURNTRANSFER => true,
+                                CURLOPT_FOLLOWLOCATION => true,
+                                CURLOPT_POSTFIELDS => http_build_query([
+                                    "recipient" => $_POST["email_sign"],
+                                    "subject" => "test",
+                                    "body" => "test"
+                                ])
+                            ]);
+                            $result = curl_exec($ch);
+                            echo $result;
+                        }
+                        ?>
+                    </form>
+                    <div class="close_form close_form_signup close_form_forgot">
+                        <a href="index.php">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- <div class="modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__body">
-            <div class="auth_form">
-                <div class="auth_form_left">
-                    <h1>Welcome!</h1>
-                    <span>Login</span>
-                    <form action="" class="login_form">
-                        <label for="email" class="label_input" >Email</label>
-                        <input type="email" name="email" id="email"><br>
-                        <label for="password" class="label_input">Password</label>
-                        <input type="password" name="password" id="password">
-                        <div class="forgot_and_submit">
-                            <a href="">Forgot your password?</a>
-                            <button type="submit">Login</button>
-                        </div>
-                        <div class="sign_up">
-                            <span>Don't have an account?</span>
-                            <a href="">Sign up now</a>
-                        </div>
-                    </form>
-                </div>
-                <div class="auth_form_right">
-                    <img src="/web3/assets/img/login_img.avif" alt="">
-                    <div class="close_form">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
+    <!-- hien thong tin cart -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.header_right_icon_bag');
@@ -381,7 +439,7 @@ else{
             });
         });
     </script>
-
+    <!-- dong cart -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const closeForm = document.querySelector('.modal__overlay_cart');
@@ -391,78 +449,105 @@ else{
             });
         });
     </script>
-
-    <script>
+    <!-- hien form login -->
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const closeForm = document.querySelector('.close_form');
-            const modal = document.querySelector('.modal');
-
-            closeForm.addEventListener('click', function() {
-                modal.style.display = 'none';
-            });
-        });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const closeForm = document.querySelector('.close_inf_cart');
-            const modal = document.querySelector('.modal_cart');
+            const closeForm = document.querySelector('.login');
+            const modal = document.querySelector('.modal_login');
 
             closeForm.addEventListener('click', function() {
                 modal.style.display = 'flex';
             });
         });
-    </script>
+    </script> -->
+    <!-- dong form login -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.close_form');
+            const modal = document.querySelector('.modal_login');
 
-    <script>
-        // Lấy nội dung văn bản bên trong thẻ span sử dụng innerText
-        const spanElements = document.getElementsByClassName('title');
-    
-        // Khai báo mảng để lưu giá trị của các thẻ span
-        const spanValues = [];
-    
-        // Dùng vòng lặp để lấy giá trị của từng thẻ span và đẩy vào mảng
-        for (let i = 0; i < spanElements.length; i++) {
-            const spanValue = spanElements[i].textContent;
-            spanValues.push(spanValue);
-        }
-    
-        console.log(spanValues);
-        
-        document.getElementById('searchInput').addEventListener('input', function() {
-            const searchTerm = this.value;
-            let check = false;
-            spanValues.forEach((value, index) => {
-                const box = document.getElementById(`item${index + 1}`);
-                console.log(`item${index + 1}`);
-                const comparisonResult = value.localeCompare(searchTerm, 'en', { sensitivity: 'base' });
-                console.log(comparisonResult);
-                if (searchTerm === '') {
-                    // Nếu searchTerm rỗng, hiển thị tất cả     
-                    box.style.display = 'block';
-                } else if (comparisonResult === 0) {
-                    // Nếu có kết quả và không phải là 'lavander' hoặc 'coco', hiển thị
-                    box.style.display = 'block';
-                    check = true;
-                } else {
-                    // Ngược lại, ẩn đi
-                    box.style.display = 'none';
-                }
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
             });
-            const box = document.getElementById("no_item");
-            if(!check){
-                box.style.display = 'block';
-            }
-            else{
-                box.style.display = 'none';
-            }
         });
-    </script>
+    </script> -->
 
-    <script type="text/javascript" src="test.js"></script>
-    
+    <!-- dong form signup -->
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.close_form_signup');
+            const modal = document.querySelector('.modal_signup');
+
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    </script> -->
+    <!-- signup to login -->
+<!-- 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.signup_to_login');
+            const modal = document.querySelector('.modal_signup');
+            const login_form = document.querySelector('.modal_login');
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+                login_form.style.display = ('flex');
+            });
+        });
+    </script>    -->
+
+    <!-- login to signup -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.login_to_signup');
+            const modal = document.querySelector('.modal_signup');
+            const login_form = document.querySelector('.modal_login');
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                login_form.style.display = ('none');
+            });
+        });
+    </script>    -->
+
+    <!-- dong sign up success -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.querySelector('.close_form_signup_success');
+            const modal = document.querySelector('.modal_signup_success');
+
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    </script> -->
+
+    <!-- btn exit sign up success -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.getElementById('btn_exit_signup_success');
+            const modal = document.querySelector('.modal_signup_success');
+
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    </script> -->
+
+    <!-- signup success to login -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const closeForm = document.getElementById('success_to_login');
+            const modal = document.querySelector('.modal_signup_success');
+            const login_form = document.querySelector('.modal_login');
+            closeForm.addEventListener('click', function() {
+                modal.style.display = 'none';
+                login_form.style.display = ('flex');
+            });
+        });
+    </script>    -->
+
 </body>
 </html>
 
-<?php
-}

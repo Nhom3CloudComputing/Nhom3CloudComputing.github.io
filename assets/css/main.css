@@ -904,6 +904,13 @@ body{
     overflow: hidden;
 }
 
+#chatbase-bubble-window{
+    position: fixed !important;
+    right: 100px !important;
+    width: 380px !important;
+    height: 525px !important;
+}
+
 .zsiq_floatmain:hover{
     transition: transform 0.6s ease;
     transform: scale(1.1);

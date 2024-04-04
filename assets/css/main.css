@@ -789,6 +789,11 @@
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f0;
+}
+
+.footer_home{
+    background-color: #ffffff;
 }
 
 .footer a{
@@ -890,3 +895,41 @@ body{
 .social i:last-child{
     margin-top: 25px;
 }
+
+/* chat box */
+
+.zsiq_floatmain{
+    position: fixed;
+    top: 90%;
+    overflow: hidden;
+}
+
+.zsiq_floatmain:hover{
+    transition: transform 0.6s ease;
+    transform: scale(1.1);
+}
+
+.zsiq_floatmain:not(:hover){
+    transition: transform 0.6s ease;
+    transform: scale(1.0);
+}
+
+#siqiframe{
+    position: fixed;
+    right: 20% ;
+    width: 400px;
+    height: 330px;
+}
+
+#chatbase-bubble-button{
+    position: fixed;
+    top: 80%;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    right: 0.6rem !important;
+}
+
+/* #chatbase-bubble-window{
+    right: 5rem !important;
+} */

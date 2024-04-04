@@ -275,65 +275,66 @@ else{
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <div class="footer_child footer_logo">
-                    <a href="">FRAIS</a>
-                    <div id="map">
-                        <script>
-                            function initMap() {
-                                var location = { lat: 21.007, lng: 105.82576};
-                                var map = new google.maps.Map(document.getElementById("map"), {
-                                    zoom: 15,
-                                    center: location
-                                });
-                                var marker = new google.maps.Marker({
-                                    position: location,
-                                    map: map
-                                });
-                            }
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFqyiPh8kFZbDUHCPzmkADnyBCVPE1dRE&callback=initMap"></script>
-                    </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_child footer_logo">
+                <a href="">FRAIS</a>
+                <div id="map">
+                    <script>
+                        function initMap() {
+                            var location = { lat: 21.007, lng: 105.82576};
+                            var map = new google.maps.Map(document.getElementById("map"), {
+                                zoom: 15,
+                                center: location
+                            });
+                            var marker = new google.maps.Marker({
+                                position: location,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFqyiPh8kFZbDUHCPzmkADnyBCVPE1dRE&callback=initMap"></script>
                 </div>
-                <div class="footer_child footer_mid">
-                    <div>
-                        <a href="" class="footer_child_title">SHOP</a>
-                        <ul>
-                            <li><a href="">CANDLES</a></li>
-                            <li><a href=""></a>SOAPAS</li>
-                            <li><a href=""></a>SALE</li>
-                            <li><a href=""></a>GIFT CARD</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="" class="footer_child_title">HELP</a>
-                        <ul>
-                            <li><a href="">TERMS & CONDITIONS</a></li>
-                            <li><a href=""></a>PRIVACY POLICY</li>
-                            <li><a href=""></a>SHIPPING & RETURNS</li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="footer_child footer_mid">
+                <div>
+                    <a href="" class="footer_child_title">SHOP</a>
+                    <ul>
+                        <li><a href="">CANDLES</a></li>
+                        <li><a href=""></a>SOAPAS</li>
+                        <li><a href=""></a>SALE</li>
+                        <li><a href=""></a>GIFT CARD</li>
+                    </ul>
                 </div>
-                <div class="footer_child footer_right">
-                    <div>
-                        <a href="" class="footer_child_title">FRAIS</a>
-                        <ul>
-                            <li><a href="">OUR STORY</a></li>
-                            <li><a href="">CONTACT US</a></li>
-                            <li><a href="">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_child_title_bottom">
-                        <a href="" class="footer_child_title">CONTACT US</a>
-                        <ul>
-                            <li><a href="">012 345 6789</a></li>
-                            <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
-                        </ul>
-                        <div class="contact_social">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </div>
+                <div>
+                    <a href="" class="footer_child_title">HELP</a>
+                    <ul>
+                        <li><a href="">TERMS & CONDITIONS</a></li>
+                        <li><a href=""></a>PRIVACY POLICY</li>
+                        <li><a href=""></a>SHIPPING & RETURNS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_child footer_right">
+                <div>
+                    <a href="" class="footer_child_title">FRAIS</a>
+                    <ul>
+                        <li><a href="">OUR STORY</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer_child_title_bottom">
+                    <a href="" class="footer_child_title">CONTACT US</a>
+                    <ul>
+                        <li><a href="">012 345 6789</a></li>
+                        <li><a href="">INFO@DAYKHONGPHAIWEB.COM</a></li>
+                    </ul>
+                    <div class="contact_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
                     </div>
                 </div>
             </div>

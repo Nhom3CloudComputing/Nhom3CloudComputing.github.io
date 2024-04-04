@@ -323,7 +323,7 @@ session_start();
                 </div>
                 <a href="" class="learn_more_blog">Learn More</a>
             </div>
-            <div class="footer">
+            <div class="footer footer_home">
                 <div class="footer_child footer_logo">
                     <a href="">FRAIS</a>
                     <div id="map">

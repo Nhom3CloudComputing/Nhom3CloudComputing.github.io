@@ -1019,6 +1019,7 @@ body{
     height: 500px;
     display: flex;
     flex-direction: row;
+    background-color: #f5f5f0;
 }
 
 .back_colum{

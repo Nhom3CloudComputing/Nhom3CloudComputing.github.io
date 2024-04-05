@@ -1,0 +1,55 @@
+.forgot_form h1{
+    margin-top: 120px;
+}
+
+
+.label_forgot_pass{
+    margin-top: 30px;
+}
+
+.forgot_pass_div{
+}
+
+#btn_forgot{
+    margin-left: 0;
+    width: 261px !important;
+    height: 42px;
+    display: block;
+    border: 0.1px solid #575757;
+    padding: 0;
+}
+
+#btn_forgot_cancel{
+    margin-left: 0;
+    margin-top: 10px;
+    width: 261px !important;
+    height: 40px;
+    background-color: #ffffff;
+    color: black;
+    border: 0.1px solid #575757 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#btn_forgot:hover{
+    background-color: #ffffff;
+    transition: background-color 1s;
+    color: black;
+}
+
+#btn_forgot:not(hover){
+    transition: background-color 1s;
+}
+
+.close_form_forgot a{
+    text-decoration: none;
+    color: black;
+}
+
+.img_forgot{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}

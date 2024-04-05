@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="voice_to_text">
+    <h1>Voice to text</h1>
+    <input type="text" id="searchInput">
+    <button id="click_to_convert">voice to text</button>
+  </div>
+  <script
+    function handleClick(event) {
+      // Kiểm tra xem trình duyệt có hỗ trợ API SpeechRecognition không
+      if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+        // Lấy biến boolean speech để xác định xem người dùng đã chấp nhận sử dụng microphone hay không
+        var speech = true;
+
+        // Sử dụng API SpeechRecognition
+        window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
+
+        const recognition = new SpeechRecognition(); // Tạo một đối tượng nhận dạng giọng nói
+        recognition.interimResults = true; // Cho phép kết quả trung gian
+
+        // Lắng nghe sự kiện 'result' khi nhận dạng giọng nói thành công
+        recognition.addEventListener('result', e => {
+          const transcript = Array.from(e.results)
+              .map(result => result[0]) // Lấy kết quả nhận dạng đầu tiên
+              .map(result => result.transcript)
+              .join(''); // Nối các phần nhận dạng thành một chuỗi
+
+          // Gán giá trị nhận dạng vào thẻ input
+          var convert_text = document.getElementById('searchInput');
+          convert_text.value = transcript;
+          alert(transcript);
+        });
+
+        // Bắt đầu nhận dạng giọng nói nếu speech là true
+        if (speech == true) {
+          recognition.start();
+        }
+      } else {
+        // Nếu trình duyệt không hỗ trợ API SpeechRecognition, thông báo cho người dùng
+        alert("Trình duyệt của bạn không hỗ trợ chức năng này. Vui lòng sử dụng trình duyệt khác.");
+      }
+    }
+
+    // Thêm sự kiện click vào nút 'voice to text'
+    document.getElementById('click_to_convert').addEventListener('click', handleClick);
+  </script>
+</body>
+</html>

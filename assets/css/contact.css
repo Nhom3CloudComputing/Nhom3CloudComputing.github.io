@@ -1063,7 +1063,12 @@ body{
 #map{
     height: 235px;
     width: 400px;
-    margin-left: 10px;
+}
+
+#map_api_id{
+    display: block;
+    width: 400px;
+    height: 235px;
 }
 
 .map_api{

@@ -326,22 +326,24 @@ session_start();
             <div class="footer footer_home">
                 <div class="footer_child footer_logo">
                     <a href="">FRAIS</a>
-                    <div id="map">
-                        <script>
-                            function initMap() {
-                                var location = { lat: 21.007, lng: 105.82576};
-                                var map = new google.maps.Map(document.getElementById("map"), {
-                                    zoom: 15,
-                                    center: location
-                                });
-                                var marker = new google.maps.Marker({
-                                    position: location,
-                                    map: map
-                                });
-                            }
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFqyiPh8kFZbDUHCPzmkADnyBCVPE1dRE&callback=initMap"></script>
-                    </div>
+                    <a href="api_map.php" id="map_api_id">
+                        <div id="map">
+                            <script>
+                                function initMap() {
+                                    var location = { lat: 21.007, lng: 105.82576};
+                                    var map = new google.maps.Map(document.getElementById("map"), {
+                                        zoom: 15,
+                                        center: location
+                                    });
+                                    var marker = new google.maps.Marker({
+                                        position: location,
+                                        map: map
+                                    });
+                                }
+                            </script>
+                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFqyiPh8kFZbDUHCPzmkADnyBCVPE1dRE&callback=initMap"></script>
+                        </div>
+                    </a>
                 </div>
                 <div class="footer_child footer_mid">
                     <div>

@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Distances btn two cities App</title>
-    <link href="./Content/bootstrap.min.css" rel="stylesheet" />
+    <title>FRAIS</title>
+    <link href="DistanceCities/Content/bootstrap.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="./App.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="DistanceCities/App.css" rel="stylesheet" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 <body>
   
@@ -53,7 +54,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqd1XS0Jt-VUrhm_x1nY9bmQEk5xwf8Sc&libraries=places"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./Content/jquery-3.1.1.min.js"></script>
-    <script src="./Main.js"></script>
+    <script src="DistanceCities/Content/jquery-3.1.1.min.js"></script>
+    <script src="DistanceCities/Main.js"></script>
 </body>
 </html>

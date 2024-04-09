@@ -417,7 +417,7 @@ session_start();
                         <label for="password" class="label_input">Password</label>
                         <input type="password" name="password" id="password">
                         <div class="forgot_and_submit">
-                            <a href="">Forgot your password?</a>
+                            <a href="forgot_pass.php">Forgot your password?</a>
                             <button id="btn_login" type="submit">Login</button>
                         </div>
                         <div class="sign_up">

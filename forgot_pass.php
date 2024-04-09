@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -395,30 +398,21 @@
                 <div class="auth_form_left forgot_form">
                     <h1>Welcome!</h1>
                     <span>Forgot password</span>
-                    <form action="forgot_pass.php" class="login_form" method = "post">
+                    <form action="send_mail_zohomail.php" class="login_form" method = "post">
                         <label for="email_sign" class="label_input label_forgot_pass" >Email</label>
+                        
+                        
+                        <?php
+                            if(isset($_SESSION['error_forgot'])) {
+                                echo "<p class='error_title' id='error_title_forgot_pass'>{$_SESSION['error_forgot']}</p>";
+                                unset($_SESSION['error_forgot']); // clear the error message after displaying
+                            }
+                        ?>
                         <input type="email" name="email_sign" id="email_sign"><br>
                         <div class="forgot_and_submit forgot_pass_div">
                             <button id="btn_forgot" type="submit">Send</button>
                             <a href="index.php" id="btn_forgot_cancel">Cancel</a>
                         </div>
-                        <?php
-                        if(isset($_POST['btn_forgot'])){
-                            $url = "https://script.google.com/macros/s/AKfycbzOa7X1YXG5aIGEBBPgz6rvG0xm2dJ5BoRxOAaOzy_sX0DiuXoLs30aTJnHEbK7yjn_/exec";
-                            $ch = curl_init($url);
-                            curl_setopt_array($ch, [
-                                CURLOPT_RETURNTRANSFER => true,
-                                CURLOPT_FOLLOWLOCATION => true,
-                                CURLOPT_POSTFIELDS => http_build_query([
-                                    "recipient" => $_POST["email_sign"],
-                                    "subject" => "test",
-                                    "body" => "test"
-                                ])
-                            ]);
-                            $result = curl_exec($ch);
-                            echo $result;
-                        }
-                        ?>
                     </form>
                     <div class="close_form close_form_signup close_form_forgot">
                         <a href="index.php">

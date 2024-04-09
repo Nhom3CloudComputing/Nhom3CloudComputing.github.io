@@ -26,7 +26,7 @@
     height: 40px;
     background-color: #ffffff;
     color: black;
-    border: 0.1px solid #575757 !important;
+    border: 0.1px solid #dddddd !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,4 +52,12 @@
 .img_forgot{
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+}
+
+.error_title{
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    width: 243px;
+    border-radius: 5px;
 }

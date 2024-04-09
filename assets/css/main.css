@@ -940,3 +940,19 @@ body{
 /* #chatbase-bubble-window{
     right: 5rem !important;
 } */
+
+/* forgot_pass_success */
+
+#change_password{
+    width: 120px;
+    height: 45px;
+    background-color: #756d3f;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* change pass succ */
+
+.modal_change_pass_success{
+    display: flex !important;
+}

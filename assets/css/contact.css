@@ -971,6 +971,44 @@ body{
    
 }
 
+.form_contact{
+    height:500px;
+    width:600px;
+    border:none;
+    margin: 0 auto;
+    background-color: #D7D7CB;
+}
+
+.templateWrapper{
+    background-color: #D7D7CB !important;
+}
+
+.tempHeadContBdr{
+    display: none !important;
+}
+
+.brandingTextCont{
+    display: none !important;
+}
+
+.brandingWrapper{
+    display: none !important;
+}
+
+/* google form */
+
+.form_gg{
+    background-color: #d7d7cb;
+}
+
+.form_gg_css{
+    /* width="700" height="700" frameborder="0" marginheight="0" */
+    width: 900px;
+    height: 1500px;
+    margin: 0 auto;
+    display: block;
+}
+
 .infor_cnt{
     display: flex;
     flex-direction: row;

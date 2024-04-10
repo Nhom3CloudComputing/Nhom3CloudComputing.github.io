@@ -10,19 +10,31 @@ class firebaseRDB{
    }
 
    public function grab($url, $method, $par=null){
+      // khởi tạo  curl
       $ch = curl_init();
+      // thiết lập curl
       curl_setopt($ch, CURLOPT_URL, $url);
+      // Thiết lập để trả về dữ liệu dưới dạng chuỗi thay vì in ra nó trực tiếp.
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      // kiểm tra ếu có tham số được cung cấp, thiết lập chúng là dữ liệu được gửi đi.
       if(isset($par)){
          curl_setopt($ch, CURLOPT_POSTFIELDS, $par);
       }
+      // Thiết lập phương thức yêu cầu HTTP.
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
+      // Vô hiệu hóa xác minh chứng chỉ SSL.
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+      // Cho phép cURL tự động chuyển hướng.
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+      // Thiết lập thời gian chờ cho yêu cầu.
       curl_setopt($ch, CURLOPT_TIMEOUT, 120);
+      // Tắt việc bao gồm phần header trong kết quả.
       curl_setopt($ch, CURLOPT_HEADER, 0);
+      // Thực hiện yêu cầu và lưu trữ nội dung trả về vào biến $html.
       $html = curl_exec($ch);
+      // Trả về nội dung của trang web được yêu cầu.
       return $html;
+      // Đóng phiên làm việc cURL.
       curl_close($ch);
    }
 
@@ -59,5 +71,4 @@ class firebaseRDB{
       $grab = $this->grab($path, "GET");
       return $grab;
    }
-
 }

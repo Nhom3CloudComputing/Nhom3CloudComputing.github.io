@@ -210,6 +210,9 @@
     border-radius: 10px;
     display: flex;
     color: #55311c;
+    position: absolute;
+    top: -80px;
+    transform: translateX(-50%);
 }
 
 .auth_form_left{

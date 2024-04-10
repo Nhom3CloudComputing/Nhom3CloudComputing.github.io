@@ -24,7 +24,7 @@ else{
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://ik.imagekit.io/141023q/favicon.png?updatedAt=1712672996495" type="image/x-icon">
 </head>
 <body>
     <div class="site">
@@ -93,7 +93,7 @@ else{
                                 <div class="overflow_cart">
                                     <div class="overflow_cart_content">
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -106,7 +106,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -119,7 +119,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -132,7 +132,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -145,7 +145,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -158,7 +158,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -171,7 +171,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -202,7 +202,7 @@ else{
 
     <div class=" body_contact">
         <div class ="imge">
-            <img class ="image1" src="assets/img/image_out_story.jpg" alt="">
+            <img class ="image1" src="https://ik.imagekit.io/141023q/image_out_story.jpg?updatedAt=1712673001022" alt="">
         </div>
         <div class="text_header">
             <div class = "title_text">
@@ -243,7 +243,7 @@ else{
     <div class = "back_video">
         <div class="video_back">
             <video autoplay muted loop class="myVideo">
-                <source src="./assets/img/file.mp4" type="video/mp4">
+                <source src="https://ik.imagekit.io/141023q/file.mp4?updatedAt=1712673004599" type="video/mp4">
               </video>
         </div>
     </div>

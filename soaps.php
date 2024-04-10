@@ -21,7 +21,7 @@ else{
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://ik.imagekit.io/141023q/favicon.png?updatedAt=1712672996495" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/shop.css">
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -93,7 +93,7 @@ else{
                                 <div class="overflow_cart">
                                     <div class="overflow_cart_content">
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -106,7 +106,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -119,7 +119,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -132,7 +132,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -145,7 +145,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -158,7 +158,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -171,7 +171,7 @@ else{
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -227,7 +227,7 @@ else{
                             <div class="row_item">
                                 <div id="item1" class="item">
                                     <a href="pearl_powder.php">
-                                        <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                                        <img src="https://ik.imagekit.io/141023q/pearl_powder.webp?updatedAt=1712673005657" alt="">
                                     </a>
                                     <span id="title1" class="title">Pearl Powder</span>
                                     <span class="price">$85.00</span><br>
@@ -235,7 +235,7 @@ else{
                                 </div>
                                 <div class="item" id="item2">
                                     <a href="lavender.php">
-                                        <img src="assets/img/img_shop/lavender.webp" alt="">
+                                        <img src="https://ik.imagekit.io/141023q/lavender.webp?updatedAt=1712673004654" alt="">
                                     </a>
                                     <span id="title2" class="title">Lavender</span>
                                     <span class="price_sale">$85.00</span>
@@ -247,7 +247,7 @@ else{
                                 </div>
                                 <div class="item" id="item3">
                                     <a href="coco_sandelwoo.php">
-                                        <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                                        <img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt="">
                                     </a>
                                     <span id="title3" class="title">Coco & Sandelwoo</span>
                                     <span class="price_sale">$15.00</span>
@@ -261,7 +261,7 @@ else{
                             <div class="row_item">
                                 <div id="item4" class="item">
                                     <a href="green_clay.php">
-                                        <img src="assets/img/img_shop/green_clay.webp" alt="">
+                                        <img src="https://ik.imagekit.io/141023q/green_clay.webp?updatedAt=1712672996887" alt="">
                                     </a>
                                     <span id="title1" class="title">Green Clay</span>
                                     <span class="price">$85.00</span><br>

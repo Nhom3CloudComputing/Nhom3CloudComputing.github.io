@@ -18,7 +18,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://ik.imagekit.io/141023q/favicon.png?updatedAt=1712672996495" type="image/x-icon">
     <script type="text/javascript" src="assets/js/login.js"></script>
 </head>
 <body>
@@ -87,7 +87,7 @@ session_start();
                                 <div class="overflow_cart">
                                     <div class="overflow_cart_content">
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -100,7 +100,7 @@ session_start();
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -113,7 +113,7 @@ session_start();
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -126,7 +126,7 @@ session_start();
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -139,7 +139,7 @@ session_start();
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -152,7 +152,7 @@ session_start();
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -165,7 +165,7 @@ session_start();
                                         </div>
                                         <div class="space_item"></div>
                                         <div class="cart_item">
-                                            <a href=""><img src="assets/img/coco_sandelwoo.webp" alt=""></a>
+                                            <a href=""><img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt=""></a>
                                             <div class="cart_item_inf">
                                                 <p>Coco Sandelwoo</p>
                                                 <p class="cart_item_price">$85.00</p>
@@ -194,7 +194,7 @@ session_start();
         </header>
         <div class="contain">
             <div class="contain_background">
-                <img src="assets/img/background.webp" alt="">
+                <img src="https://ik.imagekit.io/141023q/background.webp?updatedAt=1712672997090" alt="">
                 <div>
                     <span>HANDCRAFTED ORGANIC SOAPS & CANDLES</span><br>
                     <h1>JUST LIKE NATURE INTENDED</h1>
@@ -209,14 +209,14 @@ session_start();
                     <a href="shop.php">Shop Candles</a>
                 </div>
                 <div class="contain_fav_right">
-                    <img src="assets/img/img_fav.webp" alt="">
+                    <img src="https://ik.imagekit.io/141023q/img_fav.webp?updatedAt=1712673001165" alt="">
                 </div>
             </div>
             <div class="contain_fav2">
                 <div class="contain_fav2_background"></div>
                 <div class="contain_fav2_boder">
                     <div class="contain_fav2_left">
-                        <img src="assets/img/contain_fav2_left.webp" alt="">
+                        <img src="https://ik.imagekit.io/141023q/contain_fav2_left.webp?updatedAt=1712672997071" alt="">
                     </div>
                     <div class="contain_fav2_right">
                         <h1>PROBIOTIC CLEANSING BARS</h1>
@@ -231,7 +231,7 @@ session_start();
                     <div class="most_popular_content">
                         <div class="item item_most_popular" id="item1">
                             <a href="">
-                                <img src="assets/img/img_shop/pearl_powder.webp" alt="">
+                                <img src="https://ik.imagekit.io/141023q/pearl_powder.webp?updatedAt=1712673005657" alt="">
                             </a>
                             <span id="title2" class="title">Pearl Powder</span>
                             <span class="price_sale">$85.00</span>
@@ -243,7 +243,7 @@ session_start();
                         </div>
                         <div class="item item_most_popular" id="item2">
                             <a href="">
-                                <img src="assets/img/img_shop/lavender.webp" alt="">
+                                <img src="https://ik.imagekit.io/141023q/lavender.webp?updatedAt=1712673004654" alt="">
                             </a>
                             <span id="title2" class="title">Lavender</span>
                             <span class="price_sale">$85.00</span>
@@ -255,7 +255,7 @@ session_start();
                         </div>
                         <div class="item item_most_popular" id="item3">
                             <a href="">
-                                <img src="assets/img/img_shop/coco_sandelwoo.webp" alt="">
+                                <img src="https://ik.imagekit.io/141023q/coco_sandelwoo.webp?updatedAt=1712672996806" alt="">
                             </a>
                             <span id="title2" class="title">Coco & Sandelwoo</span>
                             <span class="price_sale">$85.00</span>
@@ -267,7 +267,7 @@ session_start();
                         </div>
                         <div class="item item_most_popular" id="item4">
                             <a href="">
-                                <img src="assets/img/img_shop/green_clay.webp" alt="">
+                                <img src="https://ik.imagekit.io/141023q/green_clay.webp?updatedAt=1712672996887" alt="">
                             </a>
                             <span id="title2" class="title">Green Clay</span>
                             <span class="price_sale">$85.00</span>
@@ -286,8 +286,8 @@ session_start();
                 <span>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
                 <a href="">Our Story</a>
                 <div class="box_img_naturally">
-                    <img src="assets/img/background_naturally.webp" class="naturally_background" alt="">
-                    <img src="assets/img/naturally.webp" class="naturally_img" alt="">
+                    <img src="https://ik.imagekit.io/141023q/background_naturally.webp?updatedAt=1712672997519" class="naturally_background" alt="">
+                    <img src="https://ik.imagekit.io/141023q/naturally.webp?updatedAt=1712673005000" class="naturally_img" alt="">
                 </div>
             </div>
             <div class="contain_frais_blog">
@@ -295,7 +295,7 @@ session_start();
                 <div class="box_log">
                     <div class="blog_item">
                         <a href="">
-                            <img src="assets/img/using_candles.webp" alt="">
+                            <img src="https://ik.imagekit.io/141023q/using_candles.webp?updatedAt=1712673008622" alt="">
                             <h2>Re-Using Candles</h2>
                             <span>
                                 Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading...
@@ -304,7 +304,7 @@ session_start();
                     </div>
                     <div class="blog_item">
                         <a href="">
-                            <img src="assets/img/pick_the_Right.webp" alt="">
+                            <img src="https://ik.imagekit.io/141023q/pick_the_Right.webp?updatedAt=1712673006274" alt="">
                             <h2>How to Pick the Right Scent</h2>
                             <span>
                             Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your
@@ -313,7 +313,7 @@ session_start();
                     </div>
                     <div class="blog_item">
                         <a href="">
-                            <img src="assets/img/5_way_to_take.webp" alt="">
+                            <img src="https://ik.imagekit.io/141023q/5_way_to_take.webp?updatedAt=1712672996953" alt="">
                             <h2>5 Ways to Take Care of Your Candles</h2>
                             <span>
                                 Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....
@@ -428,7 +428,7 @@ session_start();
                     </form>
                 </div>
                 <div class="auth_form_right">
-                    <img src="assets/img/login_img.avif" alt="">
+                    <img src="https://ik.imagekit.io/141023q/login_img.avif?updatedAt=1712673005587" alt="">
                     <div class="close_form">
                         <i class="fa-solid fa-xmark"></i>
                     </div>

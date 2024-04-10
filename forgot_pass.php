@@ -197,7 +197,7 @@ session_start();
                 <div>
                     <span>HANDCRAFTED ORGANIC SOAPS & CANDLES</span><br>
                     <h1>JUST LIKE NATURE INTENDED</h1>
-                    <button>Shop Now</button>
+                    <a href="shop.php">Shop Now</a>
                 </div>
             </div>
             <h1 class="contain_title_fav">SHOP OUR FAVORITES</h1>

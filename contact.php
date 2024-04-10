@@ -327,6 +327,7 @@ else{
                 <span class = "title_back">FRAIS</span>
                 <span> OUR STORY</span>
                 <span> CONTACT US</span>
+                <a href="form_gg.php" style="text-decoration: none;font-size: 15px;color: black; font-family: Arial, Helvetica, sans-serif;"><span>Service and products survey</span></a>
                 <span> FAQ</span>
             </div>
             <div class = "back_top">
